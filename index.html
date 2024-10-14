@@ -2,376 +2,381 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                fontFamily: {
-                    'inter': ['inter', 'sans-serif'],
-                },
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'inter': ['inter', 'sans-serif'],
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
         }
-    </script>
+      }
+    }
+  </script>
 </head>
 
 <body class="font-inter">
-    <section>
-        <!--============ heading============== -->
-        <div class="container">
-            <h2 class="text-5xl font-semibold text-center !leading-[120%] mb-2">Membership Program Overview</h2>
-            <p class="text-base font-normal opacity-70 text-center !leading-[150%] mb-10">Here are all the perks of
-                being a member.</p>
-            <div class="flex rounded-[200px] p-3 border-black border mx-auto w-fit gap-2">
-                <button
-                    class="text-base font-semibold text-white bg-[#EBA15B] py-2 px-7 rounded-[52px] !leading-[150%]">Monthly</button>
-                <button class="text-base font-semibold py-2 px-7 rounded-[52px] !leading-[150%]">4 Months</button>
-            </div>
-        </div>
-        <!-- ==============table========== -->
-        <table>
-            <tr>
-                <td class="max-w-[267px] border border-[#EFA7624D] rounded-xl py-5 align-top">
-                    <table>
-                        <tr>
-                            <th class="px-5">
-                                <p class="text-base font-semibold text-left">Basic</p>
-                                <p class="text-[32px] font-semibold text-[#EBA15B] text-left">$99/ <span
-                                        class="text-base font-normal text-black">Month</span></p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class=" px-5">
-                                <table>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
-                                                Ambassador Campaign Management</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
-                                                Campaigns on YouTube, TikTok, and Instagram</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
-                                                Manage up to 100 Sponsorships in your niche </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
-                                                Ambassador Deals</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
-                                                190 Countries to Target</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr class="border-t border-[#FBECDE]">
-                            <td>
-                                <button class="py-3 px-6 border border-[#EBA15B] rounded-[83px] mt-7">Try For
-                                    Free</button>
-                            </td>
-                        </tr>
-                    </table>
+  <section class="lg:py-28 md:py-16 sm:py-10 py-6">
+    <!--============ heading============== -->
+    <div class="container mx-auto px-3">
+      <h2 class="md:text-5xl sm:text-4xl text-3xl font-semibold text-center !leading-[120%] mb-2">Membership Program Overview</h2>
+      <p class="text-base font-normal opacity-70 text-center !leading-[150%] mb-10">Here are all the perks of
+        being a member.</p>
+      <div class="flex rounded-[200px] p-3 border-black border mx-auto w-fit gap-2">
+        <button
+          class="text-base font-semibold text-white bg-[#EBA15B] py-2 px-7 rounded-[52px] !leading-[150%]">Monthly</button>
+        <button class="text-base font-semibold py-2 px-7 rounded-[52px] !leading-[150%]">4 Months</button>
+      </div>
+    </div>
+    <!-- ==============table========== -->
+     <div class="overflow-x-scroll px-5">
+      <table class="mx-auto mt-10 max-w-[1140px]">
+        <tr class="flex gap-5">
+          <td class="min-w-[267px] border border-[#EFA7624D] rounded-xl py-5 align-top">
+            <table>
+              <tr>
+                <th class="px-5">
+                  <p class="text-base font-semibold text-left">Basic</p>
+                  <p class="text-[32px] font-semibold text-[#EBA15B] text-left">$99/ <span
+                      class="text-base font-normal text-black">Month</span></p>
+                </th>
+              </tr>
+              <tr>
+                <td class=" px-5 pb-[185px]">
+                  <table>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
+                          Ambassador Campaign Management</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
+                          Campaigns on YouTube, TikTok, and Instagram</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
+                          Manage up to 100 Sponsorships in your niche </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
+                          Ambassador Deals</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
+                          190 Countries to Target</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
-                <td class="py-5 border bg-[#EBA15B] rounded-xl max-w-[267px]">
-                    <table>
-                        <tr>
-                            <th class="px-5">
-                                <p class="text-base font-semibold text-white text-left">Growth</p>
-                                <p class="text-[32px] font-semibold text-white text-left">$399/ <span
-                                        class="text-base font-normal">Month</span></p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class=" px-5">
-                                <table>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
-                                            <p class="text-base font-normal !leading-[150%] text-white">
-                                                End-to-End Ambassador Campaign Management</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
-                                            <p class="text-base font-normal !leading-[150%] text-white">
-                                                Ambassador Campaigns on YouTube, TikTok, and Instagram</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
-                                            <p class="text-base font-normal !leading-[150%] text-white">
-                                                Discover and Manage up to 100 Sponsorships in your niche </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
-                                            <p class="text-base font-normal !leading-[150%] text-white">0%
-                                                Fee on Ambassador Deals</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
-                                            <p class="text-base font-normal !leading-[150%] text-white">
-                                                Global - Over 190 Countries to Target</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
-                                            <p class="text-base font-normal !leading-[150%] text-white">1
-                                                Email Inbox Turn-Based Game Creation</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
-                                            <p class="text-base font-normal !leading-[150%] text-white">
-                                                Engage up to 10000 Customer Ambassadors</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
-                                            <p class="text-base font-normal !leading-[150%] text-white">Email
-                                                Support</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2">
-                                            <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
-                                            <p class="text-base font-normal !leading-[150%] text-white">
-                                                Onboarding Call</p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr class="border-t border-[#FBECDE]">
-                            <td>
-                                <button class="py-3 px-6 border bg-white rounded-[83px] mt-7">Try For
-                                    Free</button>
-                            </td>
-                        </tr>
-                    </table>
+              </tr>
+              <tr class="border-t border-[#FBECDE] justify-center flex">
+                <td>
+                  <button class="py-3 px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-7 text-base font-semibold flex">Try For
+                    Free</button>
                 </td>
-                <td class="max-w-[267px] border border-[#EFA7624D] rounded-xl py-5">
-                    <table>
-                        <tr>
-                            <th class="px-5">
-                                <p class="text-base font-semibold text-left">Advanced</p>
-                                <p class="text-[32px] font-semibold text-[#EBA15B] text-left">$799/ <span
-                                        class="text-base font-normal text-black">Month</span></p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class=" px-5">
-                                <table>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
-                                                Ambassador Campaign Management</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
-                                                Campaigns on YouTube, TikTok, and Instagram</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
-                                                Manage up to 100 Sponsorships in your niche </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
-                                                Ambassador Deals</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
-                                                190 Countries to Target</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Unlimited Email
-                                                Inbox Turn-Based Game Creation</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Engage up to
-                                                100000 Customer Ambassadors</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-
-                        </tr>
-                        <tr class="border-t border-[#FBECDE]">
-                            <td>
-                                <button class="py-3 px-6 border border-[#EBA15B] rounded-[83px] mt-7">Try For
-                                    Free</button>
-                            </td>
-                        </tr>
-                    </table>
+              </tr>
+            </table>
+          </td>
+          <td class="py-5 border bg-[#EBA15B] rounded-xl min-w-[267px] align-top">
+            <table>
+              <tr>
+                <th class="px-5">
+                  <p class="text-base font-semibold text-white text-left">Growth</p>
+                  <p class="text-[32px] font-semibold text-white text-left">$399/ <span
+                      class="text-base font-normal">Month</span></p>
+                </th>
+              </tr>
+              <tr>
+                <td class=" px-5 pb-[52px]">
+                  <table>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
+                        <p class="text-base font-normal !leading-[150%] text-white">
+                          End-to-End Ambassador Campaign Management</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
+                        <p class="text-base font-normal !leading-[150%] text-white">
+                          Ambassador Campaigns on YouTube, TikTok, and Instagram</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
+                        <p class="text-base font-normal !leading-[150%] text-white">
+                          Discover and Manage up to 100 Sponsorships in your niche </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
+                        <p class="text-base font-normal !leading-[150%] text-white">0%
+                          Fee on Ambassador Deals</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
+                        <p class="text-base font-normal !leading-[150%] text-white">
+                          Global - Over 190 Countries to Target</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
+                        <p class="text-base font-normal !leading-[150%] text-white">1
+                          Email Inbox Turn-Based Game Creation</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
+                        <p class="text-base font-normal !leading-[150%] text-white">
+                          Engage up to 10000 Customer Ambassadors</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
+                        <p class="text-base font-normal !leading-[150%] text-white">Email
+                          Support</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2">
+                        <img src="./assets/image/svg/charm-tick.svg" alt="charm-tick">
+                        <p class="text-base font-normal !leading-[150%] text-white">
+                          Onboarding Call</p>
+                      </td>
+                    </tr>
+                  </table>
                 </td>
-                <td class="max-w-[267px] border border-[#EFA7624D] rounded-xl py-5">
-                    <table>
-                        <tr>
-                            <th class="px-5">
-                                <p class="text-base font-semibold text-left">Enterprise</p>
-                                <p class="text-[32px] font-semibold text-[#EBA15B] text-left">Contact Us</p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class=" px-5">
-                                <table>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
-                                                Ambassador Campaign Management</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
-                                                Campaigns on YouTube, TikTok, and Instagram</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
-                                                Manage up to unlimited Sponsorships in your niche </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
-                                                Ambassador Deals</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
-                                                190 Countries to Target</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Unlimited Email
-                                                Inbox Turn-Based Game Creation</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Engage Unlimited
-                                                Customer Ambassadors</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2 mb-4">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="flex gap-2">
-                                            <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
-                                            <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr class="border-t border-[#FBECDE]">
-                            <td>
-                                <button class="py-3 px-6 border border-[#EBA15B] rounded-[83px] mt-7">Try For
-                                    Free</button>
-                            </td>
-                        </tr>
-                    </table>
+              </tr>
+              <tr class="border-t border-[#FBECDE] justify-center flex">
+                <td>
+                  <button class="py-3 px-6 border bg-white rounded-[83px] mt-7 text-base font-semibold text-[#EBA15B] flex">Try For
+                    Free</button>
                 </td>
-
-            </tr>
-        </table>
-    </section>
+              </tr>
+            </table>
+          </td>
+          <td class="min-w-[267px] border border-[#EFA7624D] rounded-xl py-5 align-top">
+            <table>
+              <tr>
+                <th class="px-5">
+                  <p class="text-base font-semibold text-left">Advanced</p>
+                  <p class="text-[32px] font-semibold text-[#EBA15B] text-left">$799/ <span
+                      class="text-base font-normal text-black">Month</span></p>
+                </th>
+              </tr>
+              <tr>
+                <td class=" px-5 pb-7">
+                  <table>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
+                          Ambassador Campaign Management</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
+                          Campaigns on YouTube, TikTok, and Instagram</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
+                          Manage up to 100 Sponsorships in your niche </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
+                          Ambassador Deals</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
+                          190 Countries to Target</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Unlimited Email
+                          Inbox Turn-Based Game Creation</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Engage up to
+                          100000 Customer Ambassadors</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+  
+              </tr>
+              <tr class="border-t border-[#FBECDE] justify-center flex">
+                <td>
+                  <button class="py-3 px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] text-base font-semibold mt-7">Try For
+                    Free</button>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="min-w-[267px] border border-[#EFA7624D] rounded-xl py-5 align-top">
+            <table>
+              <tr>
+                <th class="px-5">
+                  <p class="text-base font-semibold text-left">Enterprise</p>
+                  <p class="text-[32px] font-semibold text-[#EBA15B] text-left">Contact Us</p>
+                </th>
+              </tr>
+              <tr>
+                <td class=" px-5 pb-7">
+                  <table>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
+                          Ambassador Campaign Management</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
+                          Campaigns on YouTube, TikTok, and Instagram</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
+                          Manage up to unlimited Sponsorships in your niche </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
+                          Ambassador Deals</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
+                          190 Countries to Target</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Unlimited Email
+                          Inbox Turn-Based Game Creation</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Engage Unlimited
+                          Customer Ambassadors</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2 mb-4">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="flex gap-2">
+                        <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                        <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="border-t border-[#FBECDE] justify-center flex">
+                  <button class="py-3 px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] text-base font-semibold mt-7">Try For
+                    Free</button>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+     </div>
+    
+    <div class="justify-center flex mt-10">
+      <button class="bg-[#EBA15B] text-base font-semibold py-3 px-6 rounded-[83px] text-white">Contact Us For Enterprise Plans.</button>
+    </div>
+  </section>
 </body>
 
 </html>
