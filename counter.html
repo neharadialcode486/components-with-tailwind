@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Counter</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    padding: '12px',
+                    center: true,
+                    screens: {
+                        sm: "600px",
+                        md: "728px",
+                        lg: "984px",
+                        xl: "1240px",
+                        "2xl": "1496px",
+                    },
+                },
+                extend: {
+                    colors: {
+                        orange: '#FF8C00',
+                        glacier: '#85B6A6',
+                        neptune: '#82B2C2',
+                        'venice-blue': '#076787',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        body {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ==clients trust counter -->
+    <section class="min-h-screen flex justify-center items-center">
+        <div class="container">
+            <div class="heading text-center">
+                <h1 class="text-[40px] max-w-[662px] mx-auto font-bold leading-[120%]">Clients trust us with their <span
+                        class="text-orange">Amazon
+                        strategy for a
+                        reason.</span></h1>
+            </div>
+            <div id="counterOne" class="flex flex-wrap gap-7 justify-center items-center mt-[60px]">
+                <div
+                    class="flex p-5 border border-orange border-opacity-20 text-center relative w-[308px] gap-6 hover:border-opacity-100 ease-linear duration-300">
+                    <img class="pointer-events-none" src="./assets/images/svg/counter-one-img-1.svg" alt="image">
+                    <div class="flex flex-col">
+                        <div class="flex">
+                            <p class="font-bold text-[40px] count" data-count="20">0</p>
+                            <span class="font-bold text-[40px] ">+</span>
+                        </div>
+                        <p class="text-base font-bold opacity-70">BRANDS MANAGED</p>
+                    </div>
+                </div>
+                <div
+                    class="flex p-5 border border-orange border-opacity-20 text-center relative w-[308px] gap-6 hover:border-opacity-100 ease-linear duration-300">
+                    <img class="pointer-events-none" src="./assets/images/svg/counter-one-img-2.svg" alt="image">
+                    <div class="flex flex-col">
+                        <div class="flex ">
+                            <span class="font-bold text-[40px]">0</span>
+                            <p class="font-bold text-[40px] count" data-count="7">0</p>
+                        </div>
+                        <p class="text-base font-bold opacity-70">LANGUAGES SPOKEN</p>
+                    </div>
+                </div>
+                <div
+                    class="flex p-5 border border-orange border-opacity-20 text-center relative w-[356px] gap-6 hover:border-opacity-100 ease-linear duration-300">
+                    <img class="pointer-events-none" src="./assets/images/svg/counter-one-img-3.svg" alt="image">
+                    <div class="flex flex-col">
+                        <div class="flex">
+                            <span class="font-bold text-[40px] ">$</span>
+                            <p class="font-bold text-[40px] count" data-count="100000">0</p>
+                            <span class="font-bold text-[40px]">+</span>
+                        </div>
+                        <p class="text-base font-bold opacity-70 flex grow">GAINED IN PROFIT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==platform section counter -->
+    <section class="min-h-screen">
+        <div class="container py-20">
+            <div class="text-center">
+                <p class="text-venice-blue text-balance font-medium">Platform</p>
+                <p class="text-[40px] font-normal font_plus_jakartas">Through <span class="font-semibold">Our
+                        Platform</span></p>
+                <p class="text-base font-normal opacity-70">We’ve helped out partners and patients achieve</p>
+            </div>
+            <div id="counter" class="flex flex-wrap gap-7 justify-center items-center mt-[60px]">
+                <div class="platform-box-one py-[42px] px-[60px] bg-glacier text-center relative w-[260px]">
+                    <div class="flex justify-center">
+                        <p class="font-semibold text-white text-6xl count" data-count="50">0</p>
+                        <span class="font-semibold text-white text-6xl ">%</span>
+                    </div>
+                    <p class="text-xl font-normal text-white">Reduction <span class="block">in Pain</span></p>
+                    <img class="absolute right-0 bottom-0 pointer-events-none"
+                        src="./assets/images/svg/counter-two-img.svg" alt="plus">
+                </div>
+                <div class="platform-box-one py-[42px] px-[42px] bg-neptune text-center relative w-[260px]">
+                    <div class="flex justify-center ">
+                        <p class="font-semibold text-white text-6xl count" data-count="90">0</p>
+                        <span class="font-semibold text-white text-6xl ">%</span>
+                    </div>
+                    <p class="text-xl font-normal text-white">Increase In-Patient<span class="block">Satisfaction</span>
+                    </p>
+                    <img class="absolute right-0 bottom-0 pointer-events-none"
+                        src="./assets/images/svg/counter-two-img.svg" alt="plus">
+                </div>
+                <div class="platform-box-one py-[55px] px-[55px] bg-venice-blue text-center relative w-[268px]">
+                    <div class="flex justify-center">
+                        <p class="font-semibold text-white text-6xl count" data-count="60">0</p>
+                        <span class="font-semibold text-white text-6xl ">%</span>
+                    </div>
+                    <p class="text-xl font-normal text-white">Faster Recovery</p>
+                    <img class="absolute right-0 bottom-0 pointer-events-none"
+                        src="./assets/images/svg/counter-two-img.svg" alt="plus">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/counter.js"></script>
+</body>
+
+</html>
