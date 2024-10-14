@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            fontFamily: {
+                'poppins': ['Poppins', 'sans-serif'],
+            },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-poppins">
+    <section>
+        <div class="container">
+            <h2 class="text-5xl font-semibold text-center !leading-[120%] mb-2">Membership Program Overview</h2>
+            <p class="text-base font-normal opacity-70 text-center !leading-[150%] mb-10">Here are all the perks of being a member.</p>
+            <div class="flex rounded-[200px] p-3 border-black border mx-auto w-fit gap-2">
+                <button class="text-base font-semibold text-white bg-[#EBA15B] py-2 px-7 rounded-[52px] !leading-[150%]">Monthly</button>
+                <button class="text-base font-semibold py-2 px-7 rounded-[52px] !leading-[150%]">4 Months</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
