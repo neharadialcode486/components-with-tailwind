@@ -5,6 +5,7 @@ accordionItems.forEach(item => {
     const content = item.querySelector('.accordionInfo');
     const icon = item.querySelector('img');
     const headings = item.querySelectorAll('.accordionHead');
+    const line = item.querySelector('.accordionLine');
 
     header.addEventListener('click', () => {
         const accordionActive = document.querySelector('.accordionItem.active');
@@ -16,21 +17,27 @@ accordionItems.forEach(item => {
             accordionActive.querySelectorAll('.accordionHead').forEach(heading => {
                 heading.classList.remove('font-semibold');
                 heading.classList.add('font-normal');
-            });
+            });            
+            accordionActive.querySelector('.accordionLine').classList.add('hidden');
         }
+
         item.classList.toggle('active');
         content.classList.toggle('hidden');
         icon.classList.toggle('rotate-180');
+        
+        // Toggle font-weight classes
         if (item.classList.contains('active')) {
             headings.forEach(heading => {
                 heading.classList.add('font-semibold');
                 heading.classList.remove('font-normal');
             });
+            line.classList.remove('hidden');
         } else {
             headings.forEach(heading => {
                 heading.classList.remove('font-semibold');
                 heading.classList.add('font-normal');
             });
+            line.classList.add('hidden');
         }
     });
 });
