@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -13,9 +14,6 @@
           'inter': ['inter', 'sans-serif'],
         },
         extend: {
-          colors: {
-            clifford: '#da373d',
-          },
           boxShadow: {
             'custom3Xl': '0px 4px 13.2px 0px #7D7D7D33'
           }
@@ -36,13 +34,14 @@
         being a member.</p>
       <div class="flex rounded-[200px] p-3 border-black border mx-auto w-fit gap-2">
         <button
-          class="text-base font-semibold text-white bg-[#EBA15B] py-2 px-7 rounded-[52px] !leading-[150%]">Monthly</button>
-        <button class="text-base font-semibold py-2 px-7 rounded-[52px] !leading-[150%]">4 Months</button>
+        id="monthlyTab" class="tab-btn active text-base font-semibold text-white bg-[#EBA15B] py-2 px-7 rounded-[52px] !leading-[150%]">Monthly</button>
+        <button id="fourMonthsTab" class="tab-btn text-base font-semibold py-2 px-7 rounded-[52px] !leading-[150%]">4 Months</button>
       </div>
     </div>
     <!-- ==============table========== -->
-    <div class="overflow-x-scroll px-5">
-      <table class="mx-auto mt-10 max-w-[1140px]">
+    <div class="overflow-x-scroll px-5 tab-content-container">
+      <!-- monthly contents -->
+      <table id="monthlyContent" class="mx-auto mt-10 max-w-[1140px] tab-content active">
         <tr class="flex gap-5">
           <td class="min-w-[267px] border border-[#EFA7624D] rounded-xl shadow-custom3Xl py-5 align-top">
             <table>
@@ -384,6 +383,98 @@
           </td>
         </tr>
       </table>
+      <!-- 4 months content -->
+        <table  id="fourMonthsContent" class="tab-content hidden max-w-[300px] mx-auto mt-10">
+          <tr>
+            <td class="min-w-[267px] border border-[#EFA7624D] rounded-xl py-5 shadow-custom3Xl align-top">
+              <table>
+                <tr>
+                  <th class="px-5">
+                    <p class="text-base font-semibold text-left">Enterprise</p>
+                    <p class="text-[32px] font-semibold text-[#EBA15B] text-left">Contact Us</p>
+                  </th>
+                </tr>
+                <tr>
+                  <td class=" px-5 pb-7">
+                    <table>
+                      <tr>
+                        <td class="flex gap-2 mb-4">
+                          <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                          <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
+                            Ambassador Campaign Management</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="flex gap-2 mb-4">
+                          <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                          <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
+                            Campaigns on YouTube, TikTok, and Instagram</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="flex gap-2 mb-4">
+                          <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                          <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
+                            Manage up to unlimited Sponsorships in your niche </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="flex gap-2 mb-4">
+                          <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                          <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
+                            Ambassador Deals</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="flex gap-2 mb-4">
+                          <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                          <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
+                            190 Countries to Target</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="flex gap-2 mb-4">
+                          <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                          <p class="text-base font-normal !leading-[150%] opacity-70 pr-2">Unlimited Email
+                            Inbox Turn-Based Game Creation</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="flex gap-2 mb-4">
+                          <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                          <p class="text-base font-normal !leading-[150%] opacity-70">Engage Unlimited
+                            Customer Ambassadors</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="flex gap-2 mb-4">
+                          <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                          <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="flex gap-2">
+                          <img src="./assets/image/svg/white-tick.svg" alt="white-tick">
+                          <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-t border-[#FBECDE] justify-center flex">
+                    <button
+                      class="py-3 px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] text-base font-semibold mt-7">Try
+                      For
+                      Free</button>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
     </div>
 
     <div class="justify-center flex mt-10">
@@ -391,481 +482,7 @@
         Plans.</button>
     </div>
   </section>
-  <!-- ===============table-2 =============== -->
-  <section>
-    <table class="w-[1086px] mx-auto">
-      <tr class="bg-[#E0A922] text-white text-xl font-bold flex">
-        <th class="text-left w-[108px] py-6">
-          <p class="pl-4">No.</p>
-        </th>
-        <th class="text-left w-[300px] py-6">
-          <p class="pl-6">Feature</p>
-        </th>
-        <th class="text-left w-[370px] py-6">
-          <p class="pl-6">Tilak Stone Arts (TSA)</p>
-        </th>
-        <th class="text-left w-[310px] py-6">
-          <p class="pl-6">Local Vendors</p>
-        </th>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">01</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">25+ years of artisanal excellence</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Variable expertise</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">02</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Material Quality</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Premium, sustainable marble</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Inconsistent quality</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">03</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Design Expertise</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Custom, modern-traditional fusion</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Limited, templated designs</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">04</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Durability Guarantee</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Long-lasting beauty assurance</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Limited or no guarantee</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">05</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">International Standards</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Global quality benchmarks</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">May not meet standards</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">06</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Customer Service</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">End-to-end personalized service</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Fragmented service</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">07</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Innovation
-          </p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Latest design and tech adoption
-          </p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Slower to innovate
-            </p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">08</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Trust & Reliability
-          </p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Legacy of trust with clients
-          </p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Varies widely
-            </p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">09</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">After-Sales Support
-          </p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Comprehensive support
-          </p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Often limited support</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">10</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Value for Money</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Quality and satisfaction focus</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Hidden long-term costs</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">11</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Cultural Sensitivity</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Culturally nuanced designs</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">May lack cultural insight</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">12</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Professional Collaboration</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Works with designers</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Limited collaboration</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">13</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Technical Expertise</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Specialized marble knowledge</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">General Knowledge</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">14</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Community Involvement</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Active community engagement</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Minimal community input</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">15</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Artisanal Expertise</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">25+ Years Experience</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">May Vary</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">16</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Premium Materials</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Sustainable Sourcing</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Inconsistent</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">17</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Customized Design</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">Tradition & Modernity</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">Limited Options</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">18</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">19</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">20</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">21</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">22</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">23</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">24</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">25</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">26</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">27</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-      <tr class="flex py-5 bg-[#ECECEC]">
-        <td class="pl-6 w-[108px]">
-          <p class="text-base font-medium">28</p>
-        </td>
-        <td class="pl-6 w-[300px]">
-          <p class="text-base font-medium">Craftsmanship</p>
-        </td>
-        <td class="flex gap-2 pl-6 w-[370px]">
-          <img src="./assets/image/svg/double-white-tick.svg" alt="double-white-tick">
-          <p class="text-base font-medium">01</p>
-          <td class="flex gap-2 pl-6 w-[310px]">
-            <img src="./assets/image/svg/cross-icon.svg" alt="cross-icon">
-            <p class="text-base font-medium">01</p>
-          </td>
-        </td>
-      </tr>
-    </table>
-  </section>
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
