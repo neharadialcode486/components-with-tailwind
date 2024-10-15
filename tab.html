@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tabs</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    padding: '12px',
+                    center: true,
+                    screens: {
+                        sm: "600px",
+                        md: "728px",
+                        lg: "984px",
+                        xl: "1240px",
+                        "2xl": "1496px",
+                    },
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- ==Tab 1== -->
+    <section class="min-h-screen flex justify-center items-center bg-[#0B0B0F]">
+        <div class="container">
+            <div
+                class="max-w-[1034px] mx-auto flex justify-between items-center max-xl:overflow-x-auto gap-5 my-8 scroll-w-0">
+                <div data-target="content1"
+                    class="relative inline-block p-[2px] bg-gradient-to-r from-[#18FF9E] to-[#1EA56C] hover:bg-gradient-to-l rounded-lg  tab active">
+                    <div class="bg-[#151619] text-[#18FF9E] rounded-md text-lg font-bold px-4 py-2 tabHead active">
+                        Néophyte
+                    </div>
+                </div>
+                <div data-target="content3" class="relative inline-block p-[2px] rounded-lg  tab">
+                    <div class=" rounded-md text-lg font-bold px-4 py-2 tabHead text-white">
+                        Rentable
+                    </div>
+                </div>
+                <div data-target="content3" class="relative inline-block p-[2px] rounded-lg  tab">
+                    <div class=" rounded-md text-lg font-bold px-4 py-2 tabHead text-white">
+                        Expérimenté
+                    </div>
+                </div>
+                <div data-target="content3" class="relative inline-block p-[2px] rounded-lg  tab">
+                    <div class=" rounded-md text-lg font-bold px-4 py-2 tabHead text-white">
+                        Malin
+                    </div>
+                </div>
+                <div data-target="content3" class="relative inline-block p-[2px] rounded-lg  tab">
+                    <div class=" rounded-md text-lg font-bold px-4 py-2 tabHead text-white">
+                        Indépendant
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10">
+                <!-- Content 1 -->
+                <div id="content1" class="tabsInfo relative rounded-3xl">
+                    <div>
+                        <div class="w-6/12">
+                            <img class="w-full max-w-[500px]" src="./assets/images/webp/tab-1-img-1.webp" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/tab.js"></script>
+</body>
+
+</html>
