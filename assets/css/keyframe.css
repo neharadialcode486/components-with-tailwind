@@ -6,7 +6,7 @@
 }
 
 .slide-scroll {
-    animation: slide 50s linear infinite;
+    animation: slide 20s linear infinite;
 }
 
 .slide-scroll:hover {
