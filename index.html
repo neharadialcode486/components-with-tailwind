@@ -4,34 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Locomotive Smooth Scroll</title>
-    <!-- Locomotive link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
+    <title>Lenis Smooth Scroll</title>
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="./assets/css/lenis.css" />
   </head>
 
   <body>
-    <div data-scroll-container>
-      <!-- Locomotive Animation code -->
-      <div class="min-h-screen bg-black"></div>
-      <div class="min-h-screen bg-slate-600"></div>
-      <div class="min-h-screen bg-zinc-500"></div>
-      <div class="min-h-screen bg-gray-900"></div>
-      <div class="min-h-screen bg-red-500"></div>
-      <div class="min-h-screen bg-amber-500"></div>
-    </div>
+    <!-- Lenis Animation code -->
+    <div class="min-h-screen bg-black"></div>
+    <div class="min-h-screen bg-slate-600"></div>
+    <div class="min-h-screen bg-zinc-500"></div>
+    <div class="min-h-screen bg-gray-900"></div>
+    <div class="min-h-screen bg-red-500"></div>
+    <div class="min-h-screen bg-amber-500"></div>
 
-    <!-- Locomotive js link -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <!--Lenis LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
-    <!-- Locomotive js Code -->
+    <!-- Lenis js code -->
     <script>
-      const scroller = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
+      const lenis = new Lenis();
+
+      lenis.on("scroll", (e) => {
+        console.log(e);
       });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
     </script>
   </body>
 </html>
