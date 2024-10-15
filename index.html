@@ -1,9 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Lottie</title>
   </head>
-  <body></body>
+
+  <body>
+    <!-- Lottie code -->
+    <div class="bg-black min-h-screen">
+      <div class="container min-h-screen flex items-center mx-auto">
+        <lottie-player
+          class="sm:w-1/2 mx-auto px-5"
+          src="./assets/lottie/tokenomics.json"
+          speed="1"
+          loop
+          autoplay
+        >
+        </lottie-player>
+      </div>
+    </div>
+    <!--LOTTIE LINK-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
 </html>
