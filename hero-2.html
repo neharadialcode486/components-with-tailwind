@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <title>hero section</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    screens: {
+                        sm: "992px",
+                        "2xl": "1140px",
+                    },
+                },
+                extend: {
+                    lineHeight: {
+
+                        "150": "150%",
+                    },
+                    fontSize: {
+                        '6xl': '64px',
+                        '3xl': '32px'
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="relative flex items-center justify-center min-h-screen">
+        <div class="absolute top-0 left-0">
+          <div class="relative">
+            <img src="./assets/images/png/hero-2-top-left-first-img.png" alt="hero-2-top-first-img">
+            <img src="./assets/images/png/hero-2-top-left-sec-img.png" alt="hero-2-top-sec-img" class="absolute left-[37%] top-[54%]">
+          </div>
+        </div>
+        
+        <div class="absolute top-0 right-0">
+          <div class="relative">
+            <img src="./assets/images/png/hero-2-top-right-first-img.png" alt="hero-2-top-first-img">
+            <img src="./assets/images/png/hero-2-top-right-sec-img.png" alt="hero-2-top-sec-img" class="absolute right-[37%] top-[54%]">
+          </div>
+        </div>
+        
+        <div class="relative z-30 bg-white flex flex-col items-center justify-center mx-auto w-full max-w-[538px] p-6">
+          <p class="text-center font-normal text-black text-[32px] leading-[150%] mb-0">A nice headline</p>
+          <h1 class="font-semibold text-center text-[64px] leading-[150%] mb-2">Goes here</h1>
+          <p class="text-center text-[#4D4D4D] text-[16px] leading-[150%]">Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec. Feugiat nibh ullamcorper egestas lectus risus ornare ullamcorper fames. Cursus libero nec facilisis risus malesuada arcu cum.</p>
+          <div class="flex gap-4 flex-wrap mt-[30px]">
+            <button class="py-[14.5px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
+            <button class="py-[14.5px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
+          </div>
+        </div>
+        
+        <div class="absolute bottom-[6px] left-0">
+          <div class="relative">
+            <img src="./assets/images/png/hero-2-bottom-left-first-img.png" alt="hero-2-top-first-img">
+            <img src="./assets/images/png/hero-2-bottom-left-sec-img.png" alt="hero-2-top-sec-img" class="absolute left-[37%] bottom-[54%]">
+          </div>
+        </div>
+        
+        <div class="absolute bottom-0 right-[34px]">
+          <div class="relative">
+            <img src="./assets/images/png/hero-2-bottom-right-sec-img.png" alt="hero-2-top-first-img">
+            <img src="./assets/images/png/hero-2-bottom-right-first-img.png" alt="hero-2-top-sec-img" class="absolute right-[37%] bottom-[54%]">
+          </div>
+        </div>
+      </section>
+      
+</body>
+
+</html>
