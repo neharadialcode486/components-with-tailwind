@@ -9,6 +9,17 @@
     <script>
         tailwind.config = {
             theme: {
+                container: {
+                    padding: '12px',
+                    center: true,
+                    screens: {
+                        sm: "600px",
+                        md: "728px",
+                        lg: "984px",
+                        xl: "1240px",
+                        "2xl": "1496px",
+                    },
+                },
                 extend: {
                     colors: {
                         clifford: '#da373d',
@@ -25,7 +36,7 @@
         <div class="container">
             <div class="heading text-center">
                 <h2 class="text-5xl font-bold">FAQ</h2>
-                <p class="max-w-[788px] mx-auto pt-4 pb-5 text-[#000000B2]">Lorem ipsum dolor sit amet consectetur.
+                <p class="max-w-[788px] mx-auto pt-4 text-[#000000B2]">Lorem ipsum dolor sit amet consectetur.
                     Semper
                     vitae nullam
                     eget
@@ -128,9 +139,9 @@
     <!-- ==Accordion 2== -->
     <section class="flex justify-center items-center min-h-screen">
         <div class="container">
-            <div>
-                <div class="w-6/12">
-                    <div class="heading">
+            <div class="flex gap-5 justify-center items-center max-lg:flex-col">
+                <div class="w-6/12 max-lg:w-full flex flex-col max-lg:items-center max-lg:justify-center">
+                    <div class="max-lg:text-center">
                         <h2 class="text-5xl font-bold">FAQ</h2>
                         <p class="max-w-[558px] pt-4 pb-5 text-[#000000B2]">Lorem ipsum dolor sit amet
                             consectetur.
@@ -141,7 +152,7 @@
                             velit urna
                             adipiscing diam. </p>
                     </div>
-                    <div class="bg-white rounded-lg p-6 max-md:p-4 space-y-4">
+                    <div class="bg-white rounded-lg py-3 max-md:p-4 space-y-4">
                         <!-- Accordion Item 1 -->
                         <div class="accordionItem active border border-[#3C278D] rounded-2xl w-full max-w-[530px]">
                             <div class="accordionHeader cursor-pointer flex justify-between p-4 items-center">
@@ -228,6 +239,9 @@
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="w-6/12 max-lg:w-full">
+                    <img class="max-w-[570px] mx-auto w-full" src="./assets/images/webp/owl.webp" alt="owl">
                 </div>
             </div>
         </div>
