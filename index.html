@@ -21,8 +21,8 @@
           },
         },
         extend: {
-          colors: {
-            clifford: '#da373d',
+          boxShadow: {
+            'hover-shadow': ' inset 0px 0px 1px 35px #fff',
           }
         }
       }
@@ -33,6 +33,10 @@
 
     body {
       font-family: "inter", sans-serif;
+    }
+
+    .fade {
+      transition: opacity 0.5s ease-in-out;
     }
   </style>
 </head>
@@ -51,21 +55,29 @@
               select traditional Moroccan garments.</p>
             <div class="flex gap-5 pt-2.5">
               <div class="flex flex-col gap-2">
-                <p id="hours" class="text-[55px] font-medium">00</p>
+                <div id="hours" class="flex text-[55px] font-medium">
+                  <span id="hours_0">0</span><span id="hours_1">0</span>
+                </div>
                 <p class="text-base">Hours</p>
               </div>
               <span class="text-[55px] font-medium">:</span>
-              <div class="flex gap-2 flex-col">
-                <p id="minutes" class="text-[55px] font-medium">00</p>
+              <div class="flex flex-col gap-2">
+                <div id="minutes" class="flex text-[55px] font-medium">
+                  <span id="minutes_0">0</span><span id="minutes_1">0</span>
+                </div>
                 <p class="text-base">Minutes</p>
               </div>
               <span class="text-[55px] font-medium">:</span>
-              <div class="flex gap-2 flex-col">
-                <p id="seconds" class="text-[55px] font-medium">00</p>
+              <div class="flex flex-col gap-2">
+                <div id="seconds" class="flex text-[55px] font-medium">
+                  <span id="seconds_0">0</span><span id="seconds_1">0</span>
+                </div>
                 <p class="text-base">Seconds</p>
               </div>
             </div>
-            <button class="text-white bg-[#DA6015] py-[14px] px-6 rounded-lg text-base font-bold mt-10">Shop
+
+            <button
+              class="text-white bg-[#DA6015] py-[14px] px-6 rounded-lg text-base font-bold mt-10 hover:shadow-hover-shadow hover:text-[#DA6015] duration-300 ease-linear">Shop
               Now</button>
           </div>
         </div>
