@@ -1,4 +1,4 @@
-// Tabs
+// Tab 1
 const tabs = document.querySelectorAll('.tab');
 const contents = document.querySelectorAll('.tabsInfo');
 const tabHeads = document.querySelectorAll('.tabHead'); 
@@ -26,7 +26,7 @@ tabs.forEach(tab => {
     });
 });
 
-// Accordion
+// tab 1 Accordion
 const accordionItems = document.querySelectorAll('.accordionItem');
 accordionItems.forEach(item => {
     const header = item.querySelector('.accordionHeader');
@@ -49,4 +49,50 @@ accordionItems.forEach(item => {
             ? './assets/images/svg/minus.svg' 
             : './assets/images/svg/plus.svg';
     });
+});
+
+// Tab 2
+const tabTwo = document.querySelectorAll('.tabTwo');
+const contentsTwo = document.querySelectorAll('.tabsInfoTwo');
+
+tabTwo.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const isActiveTab = document.querySelector('.tabTwo.active');
+        if (isActiveTab) {
+                isActiveTab.classList.remove('active', 'bg-[#DA6015]', 'text-white', 'font-bold');
+            isActiveTab.classList.add('font-bold'); }
+        contentsTwo.forEach(content => content.classList.add('hidden'));     
+        tab.classList.add('active', 'bg-[#DA6015]', 'text-white', 'font-bold');
+        tab.classList.remove('font-bold',);
+        
+        const target = tab.getAttribute('data-target');
+        const targetContent = document.getElementById(target);
+        targetContent && targetContent.classList.remove('hidden');
+    });
+});
+
+// Tab 2 swiper
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".swiper", {
+ loop: true,
+ slidesPerView: 1,
+ spaceBetween: 24,
+ pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+ },
+ breakpoints: {
+     640: {
+         slidesPerView: 1,
+         spaceBetween: 10,
+     },
+     768: {
+         slidesPerView: 2,
+              },
+     1024: {
+         slidesPerView: 3,
+         spaceBetween: 10,
+     },
+ },
+});
 });
