@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About us 3</title>
+    <link rel="stylesheet" href="./assets/css/about-3.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+    * {
+        font-family: "Inter", sans-serif;
+    }
+
+    .button {
+        background: linear-gradient(98.04deg, #4F7566 3.36%, #A2AF7A 100%);
+        border: 2px solid transparent;
+    }
+    .button:hover{
+        color:#4F7566 ;
+        border: 2px solid ;
+        background: white;
+    }
+
+</style>
+
+<body>
+    <section class="min-h-screen flex items-center justify-center">
+        <div class="container lg:max-w-[1320px] mx-auto max-lg:px-4">
+            <div class="flex flex-wrap">
+                <!-- Text Column -->
+                <div class="w-full lg:w-6/12 flex flex-col justify-center px-3">
+                    <h2 class="text-[#6C6354] lg:text-5xl sm:text-4xl text-3xl max-w-[530px] font-semibold mb-3 leading-[120%]">Submit a Request, We Start Immediately</h2>
+                    <p class="mb-8 max-w-[545px] text-[#989287] leading-[150%]">For recurring projects, you’re able to simply start a request, and we’ll start right away. For larger projects, we’ll be able to chat ahead of time to make sure we’re ready to start designing. All brand guidelines are kept on file for an even faster experience.</p>
+                    <button class="button rounded-lg text-white py-5 max-w-[165px] text-center cursor-pointer  max-lg:mb-10">Contact Us</button>
+                </div>
+                <!-- Image Column -->
+                <div class="w-full lg:w-6/12 px-3">
+                    <img class="sec-img max-w-[545px] mx-auto md:mx-0 max-h-[506.88px]" src="./assets/image/webp/union-img.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
