@@ -59,11 +59,11 @@ tabTwo.forEach(tab => {
     tab.addEventListener('click', () => {
         const isActiveTab = document.querySelector('.tabTwo.active');
         if (isActiveTab) {
-                isActiveTab.classList.remove('active', 'bg-[#DA6015]', 'text-white', 'font-bold');
-            isActiveTab.classList.add('font-bold'); }
+                isActiveTab.classList.remove('active', 'bg-[#DA6015]', 'text-white','font-bold');
+            isActiveTab.classList.add('font-bold','text-black'); }
         contentsTwo.forEach(content => content.classList.add('hidden')); 
-        tab.classList.add('active', 'bg-[#DA6015]', 'text-white', 'font-bold');
-        tab.classList.remove('font-bold',);
+        tab.classList.add('active', 'bg-[#DA6015]', 'text-white','font-bold');
+        tab.classList.remove('font-bold','text-black');
         
         const target = tab.getAttribute('data-target');
         const targetContent = document.getElementById(target);
