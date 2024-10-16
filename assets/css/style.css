@@ -7,3 +7,23 @@
   .shadow-custom3xl{
     box-shadow: 0px 4px 13.2px 0px #7D7D7D33;
   }
+  .monthly-card:hover .try-for-free{
+    background: white;
+  }
+  .monthly-card:hover p{
+    opacity: 100%;
+    color: white;
+  }
+  .monthly-card:hover .month{
+    color: white;
+  }
+  .monthly-card:hover .orange-tick{
+    display: none ;
+  }
+  .monthly-card:hover .white-tick{
+    display: block ;
+  }
+  p, .month{
+    transition: all ease-in-out 300ms;
+  }
+ 
