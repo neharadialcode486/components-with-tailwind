@@ -39,7 +39,7 @@ accordionItems.forEach(item => {
         if (accordionActive && accordionActive !== item) {
             accordionActive.classList.remove('active');
             accordionActive.querySelector('.accordionInfo').classList.add('hidden'); 
-            accordionActive.querySelector('img').src = './assets/images/svg/plus.svg';                   
+            accordionActive.querySelector('img').src = './assets/images/svg/plus.svg';
         }
         item.classList.toggle('active');
         content.classList.toggle('hidden');
@@ -61,7 +61,7 @@ tabTwo.forEach(tab => {
         if (isActiveTab) {
                 isActiveTab.classList.remove('active', 'bg-[#DA6015]', 'text-white', 'font-bold');
             isActiveTab.classList.add('font-bold'); }
-        contentsTwo.forEach(content => content.classList.add('hidden'));     
+        contentsTwo.forEach(content => content.classList.add('hidden')); 
         tab.classList.add('active', 'bg-[#DA6015]', 'text-white', 'font-bold');
         tab.classList.remove('font-bold',);
         
