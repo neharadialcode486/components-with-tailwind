@@ -6,35 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./assets/css/hero.css">
-  <title>Bac To Top</title>
+  <title>Back To Top</title>
   <script>
     tailwind.config = {
       theme: {
-        container: {
-          center: true,
-          screens: {
-            sm: "992px",
-            "2xl": "1140px",
-          },
-        },
-        extend: {
-          lineHeight: {
-
-            "150": "150%",
-          },
-           fontSize: {
-            '6xl': '64px',
-            '3xl' : '32px'
-          },
-        }
+        extend: {}
       }
     }
   </script>
 </head>
+
+<style>
+  * {
+    scroll-behavior: smooth !important;
+  }
+</style>
+
 <body>
- <section>
-  Back to Top
- </section>
+  <!-- Back to top section -->
+  <section class="min-h-screen">
+    <button class="top-btn fixed right-5 bottom-5 duration-300 animate-bounce scale-[1.8]" style="display:none;">
+      <img class="size-16" src="./assets/images/png/top.png" alt="back to top">
+    </button>
+  </section>
+  <section class="min-h-screen"></section>
+  <section class="min-h-screen"></section>
+
+  <!-- Back to top JS -->
+  <script>
+    let topBtn = document.querySelector(".top-btn");
+
+    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+    window.onscroll = () => {
+      if (window.scrollY > 150) { 
+        topBtn.style.display = "block";
+      } else { 
+        topBtn.style.display = "none";
+      }
+    };
+  </script>
 </body>
 
 </html>
