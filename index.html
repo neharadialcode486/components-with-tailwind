@@ -16,12 +16,23 @@
   </script>
 </head>
 
-
-
 <body>
-<section>
-  <h1>Preloader</h1>
-</section>
+  <!-- preloader -->
+  <section class="min-h-screen flex justify-center items-center">
+    <h1 class="text-9xl font-bold text-center">Preloader</h1>
+    <div id="preloader" class="flex items-center justify-center h-screen bg-white fixed inset-0 z-50">
+      <img src="./assets/images/gif/preloader.gif" alt="">
+    </div>
+  </section>
+  <!-- preloader JS  -->
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('main-content').classList.remove('hidden');
+      }, 2000);
+    });
+  </script>
 </body>
 
 </html>
