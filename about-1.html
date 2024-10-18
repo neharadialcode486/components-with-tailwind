@@ -29,35 +29,23 @@
     .bg-img {
         background-image: url(/assets/image/webp/sec-1-bg.webp);
     }
-
-    .front {
-        transform: translateY(-4px);
-        transition: all 400ms linear;
-    }
-
-    .pushable:active .front {
-        transform: translateY(0px);
-        transition: all 0ms linear;
-    }
 </style>
 
 <body>
     <section class="min-h-screen flex items-center justify-center">
         <div class="bg-img w-full py-28 bg-cover bg-no-repeat">
             <div class="container mx-auto">
-                <h3 class="text-center text-4xl font-semibold mb-3">Lorem ipsum</h3>
-                <p class="mx-auto max-w-3xl text-gray-700 text-center">Lorem ipsum dolor sit amet consectetur. Semper vitae nullam
+                <h3 class="text-center lg:text-5xl md:text-3xl text-2xl font-semibold mb-4">Lorem ipsum</h3>
+                <p class="mx-auto max-w-3xl text-gray-700 text-center">Lorem ipsum dolor sit amet consectetur. Semper
+                    vitae nullam
                     eget
                     consectetur mi. Vulputate sapien a a bibendum suspendisse quam. Hac posuere eget nam diam velit urna
                     adipiscing diam. Dis velit nam vitae hendrerit at egestas. Tellus velit turpis at sed lorem vitae
                     sed.
                 </p>
-                <div class="text-center mt-4 pt-2">
-                    <button class="pushable cursor-pointer bg-[#231754] rounded-xl border-0 p-0 ">
-                        <span
-                            class="front py-2.5 px-[52px] bg-[#3C278D]  rounded-xl block text-white border-2 border-transparent hover:border-[#231754] hover:bg-white hover:text-[#231754]">
-                            Button
-                        </span>
+                <div class="text-center mt-8">
+                    <button class="mx-auto transition-all duration-[0.4s] cursor-pointer front py-2.5 px-[55px] bg-[#3C278D]  rounded-xl block text-white border-2 border-transparent hover:border-[#231754] hover:bg-white hover:text-[#231754]">
+                        Button
                     </button>
                 </div>
             </div>
