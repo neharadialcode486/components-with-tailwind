@@ -4,13 +4,9 @@ const EVENTS_DATA = [
     { date: "4", months: "jun", title: "Biodiversity - Sixth mass exctinction", time: "Online", location: "Online" },
     { date: "11", months: "jun", title: "The role of LNG - Part 2", time: "Online", location: "Nijenborgh 6, room 1.06" },
 ];
-
 const PROGRAMMES_DATA = ['Requirements', 'Events', 'Career event', 'Activities', 'Masterclasses'];
-
 const eventsContainer = document.getElementById('eventsContainer');
 const programmesContainer = document.getElementById('programmesContainer');
-
-// Render Events
 EVENTS_DATA.forEach(item => {
     const eventElement = document.createElement('div');
     eventElement.className = 'flex justify-between items-center mt-4 w-full';
@@ -41,8 +37,6 @@ EVENTS_DATA.forEach(item => {
                 `;
     eventsContainer.appendChild(eventElement);
 });
-
-// Render Programmes
 for (let i = 0; i < 2; i++) {
     const programmeElement = document.createElement('div');
     programmeElement.className = 'border border-dark-gray rounded-lg py-8 px-6 mt-4 relative overflow-hidden';
@@ -76,7 +70,6 @@ const tabsData = [
         title: "Programmes",
     },
 ];
-
 const svgIcons = [
     ` <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_3281_766)">
@@ -105,13 +98,11 @@ const svgIcons = [
 </svg>
 `
 ];
-
 const header = document.getElementById('header');
 const tabsContainer = document.getElementById('tabs');
 const menuToggle = document.getElementById('menu-toggle');
 let open = false;
 let activeTab = 0;
-
 const renderTabs = () => {
     tabsContainer.innerHTML = '';
     tabsData.forEach((tab, idx) => {
@@ -133,20 +124,72 @@ const renderTabs = () => {
         tabsContainer.appendChild(tabElement);
     });
 };
-
 const handleTabClick = (idx, title) => {
     activeTab = idx;
     window.history.pushState(null, '', `/${title.toLowerCase()}`);
     renderTabs();
 };
-
 const toggleMenu = () => {
     open = !open;
     header.classList.toggle('menu-open', open);
     header.classList.toggle('menu-closed', !open);
     menuToggle.textContent = open ? 'Close' : 'Menu';
 };
-
 menuToggle.addEventListener('click', toggleMenu);
-
 renderTabs();
+const SWIPER_DATA = [
+    { img: './assets/images/webp/landscape.webp', title: "Leadership: Leading the hydrogen economy" },
+    { img: './assets/images/webp/house.webp', title: "Biodiversity - Sixth mass exctinction" },
+    { img: './assets/images/webp/nigeria.webp', title: "Energy Transition in Nigeria" },
+    { img: './assets/images/webp/lng-img.webp', title: "The role of LNG" },
+    { img: './assets/images/webp/landscape.webp', title: "Leadership: Leading the hydrogen economy" },
+    { img: './assets/images/webp/house.webp', title: "Biodiversity - Sixth mass exctinction" },
+]
+const swiperWrapper = document.querySelector('.swiper-wrapper');
+SWIPER_DATA.forEach(item => {
+    const slide = document.createElement('div');
+    slide.classList.add('swiper-slide');
+    slide.innerHTML = `
+     <div class="relative overflow-hidden rounded-lg w-full h-full min-h-[292px] bg-white">
+                                <div class="relative overflow-hidden">
+                                    <img src="${item.img}" alt="${item.title}" class='w-full relative z-10 hover:scale-110 duration-300 ease-linear' />
+                                </div>
+                                <div class="bg-white w-full -mt-0.5 p-6">
+                                    <h2 class='mt-0.5 text-base leading-4 font-bold min-h-8'>${item.title}</h2>
+                                    <div class="flex items-center gap-2.5 mt-4">
+                                       <span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0.25C3.71875 0.25 0.25 3.71875 0.25 8C0.25 12.2812 3.71875 15.75 8 15.75C12.2812 15.75 15.75 12.2812 15.75 8C15.75 3.71875 12.2812 0.25 8 0.25ZM10.8903 10.0312L10.2653 10.8125C10.0928 11.0281 9.77812 11.0631 9.5625 10.8906C9.56219 10.8903 9.56219 10.8903 9.56219 10.8903L7.46844 9.33656C7.17188 9.09906 6.99938 8.74 6.99969 8.36063V3.49969C6.99969 3.22344 7.22344 2.99969 7.49969 2.99969H8.49969C8.77562 2.99969 8.99969 3.22344 8.99969 3.49969V7.99969L10.8122 9.32781C11.0278 9.50031 11.0625 9.81469 10.89 10.0303C10.8897 10.0303 10.8897 10.0303 10.8897 10.0306L10.8903 10.0312Z" fill="#CDCCC6" />
+            </svg></span>
+                                        <p class='font-normal text-xs'>Online</p>
+                                    </div>
+                                    <div class="flex items-center gap-2.5 mb-4 mt-2">
+                                        <span><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 7.72998e-07C3.05333 7.72998e-07 0.666664 2.38667 0.666664 5.33333C0.666664 7.67333 4 13.35 5.432 15.6827C5.552 15.876 5.76466 15.996 5.998 15.996C6.22466 15.996 6.44466 15.876 6.56466 15.676C7.99133 13.3427 11.33 7.66933 11.33 5.32267C11.3233 2.376 8.93666 -0.0106659 5.99666 -0.0106659L6 7.72998e-07ZM6 7.66667C4.70666 7.66667 3.66666 6.62 3.66666 5.33333C3.66666 4.04 4.70666 3 6 3C7.28666 3 8.33333 4.04 8.33333 5.33333C8.33333 6.62 7.28666 7.666 6 7.666V7.66667Z" fill="#CDCCC6" />
+            </svg></span>
+                                        <p class='font-normal text-xs'>80000</p>
+                                    </div>
+                                </div>
+                            </div>
+        `;
+    swiperWrapper.appendChild(slide);
+});
+const swiper = new Swiper('.swiper-container', {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1280: {
+            slidesPerView: 4,
+        }
+    }
+});

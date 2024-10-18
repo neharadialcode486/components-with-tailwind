@@ -5,8 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            content: '' !important;
+        }
+
+        .swiper-button-next svg,
+        .swiper-button-prev svg {
+            width: auto !important;
+            height: auto !important;
+        }
+
         .active {
             background-color: #ffcc00;
         }
@@ -88,46 +106,78 @@
                 <img src="../../assets/images/webp/plus-iocns.webp" alt="plus"
                     class="max-w-[200px] w-full lg:opacity-100 opacity-30" />
             </div>
-            <div class="lg:p-8 p-3 relative z-20 w-full overflow-hidden">
-                <h2 class="font-bold text-3xl md:text-4xl mt-7 sm:mt-2">Welcome back, Zareh 👋🏻</h2>
-                <p class="mt-5 font-normal text-base">Below you find your upcoming events, enrolled programmes and
-                    progress
-                </p>
-                <div class="mt-12 xl:flex-row flex-col flex justify-between gap-4">
-                    <div class="rounded-lg w-full xl:w-[58.7%] bg-white p-3 lg:p-8">
-                        <h2 class="font-bold text-2xl mb-4 lg:mb-9">You have 3 upcoming events</h2>
-                        <div id="eventsContainer"></div>
-                        <a href="#"
-                            class="flex items-center gap-2 font-semibold text-sm duration-300 ease-linear group hover:scale-105 mt-12 w-fit mb-5 md:mb-14">More
-                            events <span class="icon right-arrow-icon"><svg width="16" height="16" viewBox="0 0 16 16"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.5 8.50001H15.5C15.7733 8.50001 16 8.27334 16 8.00001C16 7.72001 15.7733 7.50001 15.5 7.50001H0.5C0.22 7.50001 0 7.72001 0 8.00001C0 8.27334 0.22 8.50001 0.5 8.50001Z"
-                                        fill="black" />
-                                    <path
-                                        d="M8.85333 15.3533L15.8533 8.35334C16.0467 8.15334 16.0467 7.84001 15.8533 7.64001L8.85333 0.640005C8.65333 0.440005 8.34 0.440005 8.14 0.640005C7.94 0.833339 7.94 1.14667 8.14 1.34667L15.14 8.34667V7.63334L8.14 14.6333C7.94 14.8267 7.94 15.14 8.14 15.34C8.33333 15.5333 8.64667 15.5333 8.84667 15.34L8.85333 15.3533Z"
-                                        fill="black" />
-                                </svg></span></a>
+        </div>
+        <div class="lg:p-8 p-3 relative z-20 w-full sm:w-[83.3%] overflow-hidden">
+            <h2 class="font-bold text-3xl md:text-4xl mt-7 sm:mt-2">Welcome back, Zareh 👋🏻</h2>
+            <p class="mt-5 font-normal text-base">Below you find your upcoming events, enrolled programmes and
+                progress
+            </p>
+            <div class="mt-12 xl:flex-row flex-col flex justify-between gap-4">
+                <div class="rounded-lg w-full xl:w-[58.7%] bg-white p-3 lg:p-8">
+                    <h2 class="font-bold text-2xl mb-4 lg:mb-9">You have 3 upcoming events</h2>
+                    <div id="eventsContainer"></div>
+                    <a href="#"
+                        class="flex items-center gap-2 font-semibold text-sm duration-300 ease-linear group hover:scale-105 mt-12 w-fit mb-5 md:mb-14">More
+                        events <span class="icon right-arrow-icon"><svg width="16" height="16" viewBox="0 0 16 16"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.5 8.50001H15.5C15.7733 8.50001 16 8.27334 16 8.00001C16 7.72001 15.7733 7.50001 15.5 7.50001H0.5C0.22 7.50001 0 7.72001 0 8.00001C0 8.27334 0.22 8.50001 0.5 8.50001Z"
+                                    fill="black" />
+                                <path
+                                    d="M8.85333 15.3533L15.8533 8.35334C16.0467 8.15334 16.0467 7.84001 15.8533 7.64001L8.85333 0.640005C8.65333 0.440005 8.34 0.440005 8.14 0.640005C7.94 0.833339 7.94 1.14667 8.14 1.34667L15.14 8.34667V7.63334L8.14 14.6333C7.94 14.8267 7.94 15.14 8.14 15.34C8.33333 15.5333 8.64667 15.5333 8.84667 15.34L8.85333 15.3533Z"
+                                    fill="black" />
+                            </svg></span></a>
+                </div>
+                <div class="rounded-lg w-full xl:w-[41.3%] bg-white p-3 lg:p-8">
+                    <h2 class="font-bold text-2xl mb-4 lg:mb-9">Your programmes</h2>
+                    <div id="programmesContainer"></div>
+                    <a href="#"
+                        class="flex items-center gap-2 font-semibold text-sm duration-300 ease-linear group hover:scale-105 mt-12 w-fit mb-1">More
+                        programmes <span class="icon right-arrow-icon"><svg width="16" height="16" viewBox="0 0 16 16"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.5 8.50001H15.5C15.7733 8.50001 16 8.27334 16 8.00001C16 7.72001 15.7733 7.50001 15.5 7.50001H0.5C0.22 7.50001 0 7.72001 0 8.00001C0 8.27334 0.22 8.50001 0.5 8.50001Z"
+                                    fill="black" />
+                                <path
+                                    d="M8.85333 15.3533L15.8533 8.35334C16.0467 8.15334 16.0467 7.84001 15.8533 7.64001L8.85333 0.640005C8.65333 0.440005 8.34 0.440005 8.14 0.640005C7.94 0.833339 7.94 1.14667 8.14 1.34667L15.14 8.34667V7.63334L8.14 14.6333C7.94 14.8267 7.94 15.14 8.14 15.34C8.33333 15.5333 8.64667 15.5333 8.84667 15.34L8.85333 15.3533Z"
+                                    fill="black" />
+                            </svg></span></a>
+                </div>
+            </div>
+            <div class="mt-7 relative w-full overflow-hidden pt-5">
+                <div class="flex w-full justify-between mb-6">
+                    <h2 class="font-bold text-2xl">Recommended for you</h2>
+                    <div class="flex items-center gap-2 relative">
+                        <div class="hover:scale-95 swiper-button-next !top-auto !relative !right-auto !w-8 !h-8 cursor-pointer hover:bg-white duration-300 ease-linear hover:border-off-yellow rounded-full border border-[#BBBAB6]"
+                            aria-label="Next"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.5 8.50001H15.5C15.7733 8.50001 16 8.27334 16 8.00001C16 7.72001 15.7733 7.50001 15.5 7.50001H0.5C0.22 7.50001 0 7.72001 0 8.00001C0 8.27334 0.22 8.50001 0.5 8.50001Z"
+                                    fill="black" />
+                                <path
+                                    d="M8.85333 15.3533L15.8533 8.35334C16.0467 8.15334 16.0467 7.84001 15.8533 7.64001L8.85333 0.640005C8.65333 0.440005 8.34 0.440005 8.14 0.640005C7.94 0.833339 7.94 1.14667 8.14 1.34667L15.14 8.34667V7.63334L8.14 14.6333C7.94 14.8267 7.94 15.14 8.14 15.34C8.33333 15.5333 8.64667 15.5333 8.84667 15.34L8.85333 15.3533Z"
+                                    fill="black" />
+                            </svg></div>
+                        <div class="hover:scale-95 swiper-button-prev !top-auto !relative !left-auto rotate-180 cursor-pointer !w-8 !h-8 hover:bg-white duration-300 ease-linear hover:border-off-yellow rounded-full border border-[#BBBAB6]"
+                            aria-label="Previous"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.5 8.50001H15.5C15.7733 8.50001 16 8.27334 16 8.00001C16 7.72001 15.7733 7.50001 15.5 7.50001H0.5C0.22 7.50001 0 7.72001 0 8.00001C0 8.27334 0.22 8.50001 0.5 8.50001Z"
+                                    fill="black" />
+                                <path
+                                    d="M8.85333 15.3533L15.8533 8.35334C16.0467 8.15334 16.0467 7.84001 15.8533 7.64001L8.85333 0.640005C8.65333 0.440005 8.34 0.440005 8.14 0.640005C7.94 0.833339 7.94 1.14667 8.14 1.34667L15.14 8.34667V7.63334L8.14 14.6333C7.94 14.8267 7.94 15.14 8.14 15.34C8.33333 15.5333 8.64667 15.5333 8.84667 15.34L8.85333 15.3533Z"
+                                    fill="black" />
+                            </svg></div>
                     </div>
-                    <div class="rounded-lg w-full xl:w-[41.3%] bg-white p-3 lg:p-8">
-                        <h2 class="font-bold text-2xl mb-4 lg:mb-9">Your programmes</h2>
-                        <div id="programmesContainer"></div>
-                        <a href="#"
-                            class="flex items-center gap-2 font-semibold text-sm duration-300 ease-linear group hover:scale-105 mt-12 w-fit mb-1">More
-                            programmes <span class="icon right-arrow-icon"><svg width="16" height="16"
-                                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.5 8.50001H15.5C15.7733 8.50001 16 8.27334 16 8.00001C16 7.72001 15.7733 7.50001 15.5 7.50001H0.5C0.22 7.50001 0 7.72001 0 8.00001C0 8.27334 0.22 8.50001 0.5 8.50001Z"
-                                        fill="black" />
-                                    <path
-                                        d="M8.85333 15.3533L15.8533 8.35334C16.0467 8.15334 16.0467 7.84001 15.8533 7.64001L8.85333 0.640005C8.65333 0.440005 8.34 0.440005 8.14 0.640005C7.94 0.833339 7.94 1.14667 8.14 1.34667L15.14 8.34667V7.63334L8.14 14.6333C7.94 14.8267 7.94 15.14 8.14 15.34C8.33333 15.5333 8.64667 15.5333 8.84667 15.34L8.85333 15.3533Z"
-                                        fill="black" />
-                                </svg></span></a>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/sidebar.js"></script>
 </body>
 
