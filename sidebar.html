@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .active {
+            background-color: #ffcc00;
+        }
+
+        .inactive {
+            background-color: #000000;
+        }
+
+        .menu-open {
+            left: 0;
+        }
+
+        .menu-closed {
+            left: -100%;
+        }
+
+        .icon {
+            -webkit-mask: url('./assets/images/svg/dashboardIcon.svg') no-repeat center;
+            mask: url('./assets/images/svg/dashboardIcon.svg') no-repeat center;
+            background-color: #FFED00;
+            /* Desired color */
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'linear-green': "linear-gradient(81.75deg, #18FF9E 0%, #1EA56C 126.43%)",
+                    },
+                    fontFamily: {
+                        'lato': "'Lato', sans-serif",
+                        'inter': "'Inter', sans-serif",
+                    },
+                    container: {
+                        center: true,
+                        padding: "20px",
+                    },
+                    colors: {
+                        'off-yellow': "#FFED00",
+                        'dark-gray': "#EAE9E3",
+                    }
+                },
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="header-container"
+        class="md:px-[120px] absolute sm:relative z-[200] duration-300 ease-linear sm:px-24 min-h-screen">
+        <div id="header"
+            class="top-0 sm:max-w-[192px] md:max-w-[240px] max-w-[240px] w-full flex flex-col justify-between sm:fixed min-h-screen bg-black sm:p-2 p-5 md:p-5"
+            style="left: 0%;">
+            <div class="flex flex-col">
+                <a href="/" class="w-fit mx-auto mt-6"><img src='./assets/images/svg/logo.svg' alt="logo"></a>
+                <div id="tabs" class="flex flex-col mt-16 gap-8"></div>
+            </div>
+            <div class="md:p-5 sm:p-0 p-5 flex flex-col">
+                <a href="/" class="w-fit text-white opacity-50 mt-4 hover:scale-95 text-sm">Help</a>
+                <a href="/" class="w-fit text-white opacity-50 mt-4 hover:scale-95 text-sm">Contact us</a>
+                <a href="/" class="w-fit text-white opacity-50 mt-4 hover:scale-95 text-sm">Log out</a>
+                <a href="/" class="flex items-center gap-3.5 text-white mt-11">
+                    <img src='./assets/images/svg/user-icon.svg' alt="user"> Zareh Geertjes
+                </a>
+            </div>
+        </div>
+        <div id="menu-toggle"
+            class="fixed w-16 h-10 bg-white top-0 left-0 sm:hidden z-[150] grid place-items-center border-light-gray">
+            Menu
+        </div>
+    </div>
+
+    <script>
+        const tabsData = [
+            {
+                title: "Dashboard",
+                icon: "dashboardIcon",
+            },
+            {
+                title: "Events",
+                icon: "eventsIcon",
+            },
+            {
+                title: "On demand",
+                icon: "onIcon",
+            },
+            {
+                title: "Programmes",
+                icon: "programmesIcon",
+            },
+        ];
+
+        const header = document.getElementById('header');
+        const tabsContainer = document.getElementById('tabs');
+        const menuToggle = document.getElementById('menu-toggle');
+        let open = false;
+        let activeTab = 0;
+
+        const renderTabs = () => {
+            tabsContainer.innerHTML = '';
+            tabsData.forEach((tab, idx) => {
+                const tabElement = document.createElement('div');
+                tabElement.className = "flex items-center gap-4";
+                tabElement.innerHTML = `
+                    <span class="w-1.5 h-1.5 rounded-full ${activeTab === idx ? 'bg-off-yellow' : 'bg-black'}"></span>
+                    <a href="/${tab.title.toLowerCase()}" class="text-base flex items-center gap-4 font-normal ${activeTab === idx ? 'text-off-yellow' : 'text-white'}">
+                        <img src='./assets/images/svg/${tab.icon}.svg' alt="${tab.title}" class="${activeTab === idx ? 'fill-off-yellow' : 'fill-white'} icon" />
+                        ${tab.title}
+                    </a>`;
+
+                tabElement.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    handleTabClick(idx, tab.title);
+                });
+
+                tabsContainer.appendChild(tabElement);
+            });
+        };
+
+        const handleTabClick = (idx, title) => {
+            activeTab = idx;
+            window.history.pushState(null, '', `/${title.toLowerCase()}`);
+            renderTabs();
+        };
+
+        const toggleMenu = () => {
+            open = !open;
+            header.classList.toggle('menu-open', open);
+            header.classList.toggle('menu-closed', !open);
+            menuToggle.textContent = open ? 'Close' : 'Menu';
+        };
+
+        menuToggle.addEventListener('click', toggleMenu);
+
+        renderTabs();
+    </script>
+</body>
+
+</html>
