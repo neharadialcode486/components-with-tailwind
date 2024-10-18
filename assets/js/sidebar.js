@@ -143,7 +143,7 @@ const renderTabs = () => {
 };
 const handleTabClick = (idx, title) => {
     activeTab = idx;
-    window.history.pushState(null, '', `/${title.toLowerCase()}`);
+    window.history.pushState(null, '', `#${title.toLowerCase()}`);
     renderTabs();
 };
 const toggleMenu = () => {
