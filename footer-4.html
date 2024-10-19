@@ -13,35 +13,37 @@
     * {
         font-family: "Inter", sans-serif !important;
     }
-
+    .common-hover:hover{
+        color: #EB0055;
+    }
 </style>
 
 <body>
     <footer class="relative bg-cover min-h-screen bg-black flex items-center justify-center flex-col">
-        <div class="left-side-layer">
-            <img class="absolute hidden sm:block top-[25%] left-0" src="./assets/image/svg/right-side-layer.svg" alt="layer">
-            <img class="absolute bottom-[25%] right-0" src="./assets/image/svg/left-side-layer.svg" alt="layer">
-            <img class="absolute top-[30%] left-[15%]" src="./assets/image/svg/ellips-left.svg" alt="layer">
-            <img class="absolute hidden sm:block top-[45%] right-[15%]" src="./assets/image/svg/ellips-right.svg" alt="layer">
+        <div class="left-side-layer ">
+            <img class="pointer-events-none absolute hidden sm:block top-[25%] left-0 rounded-l-[40px]" src="./assets/image/svg/right-side-layer.svg" alt="layer">
+            <img class="pointer-events-none absolute bottom-[25%] right-0 rounded-r-[40px]" src="./assets/image/svg/left-side-layer.svg" alt="layer">
+            <img class="pointer-events-none absolute top-[30%] left-[5%]" src="./assets/image/svg/ellips-left.svg" alt="layer">
+            <img class="pointer-events-none absolute hidden sm:block top-[45%] right-[15%]" src="./assets/image/svg/ellips-right.svg" alt="layer">
         </div>
         <div class="container flex items-center justify-center flex-col mx-auto">
-            <img class="mb-[26px]" src="./assets/image/svg/gaming-logo.svg" alt="gaming">
-            <div class="flex flex-col md:flex-row gap-4 text-center md:text-left mb-8">
+            <a href="/"><img class="mb-[29px]" src="./assets/image/svg/gaming-logo.svg" alt="gaming"></a>
+            <div class="flex flex-col md:flex-row gap-4 text-center md:text-left mb-7">
                 <div class="flex gap-4">
-                    <p class=" text-[#B3B3B3] ">Home</p>
-                    <p class=" text-[#B3B3B3] ">About Us</p>
-                    <p class=" text-[#B3B3B3] ">Tokenomics</p>
+                    <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">Home</p>
+                    <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">About Us</p>
+                    <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">Tokenomics</p>
                 </div>
                 <div class="flex gap-4 md:mx-0 mx-auto">
-                    <p class=" text-[#B3B3B3] ">Utility</p>
-                    <p class=" text-[#B3B3B3] ">Ecosystem</p>
+                    <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">Utility</p>
+                    <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">Ecosystem</p>
                 </div>
             </div>
             <div class="flex gap-3">
-                <img src="./assets/image/svg/footer-4-insta.svg" alt="insta">
-                <img src="./assets/image/svg/footer-4-twitter.svg" alt="twitter">
-                <img src="./assets/image/svg/footer-4-fb.svg" alt="fb">
-                <img src="./assets/image/svg/footer-4-youtube.svg" alt="youtube">
+                <a href="https://www.instagram.com/"><img src="./assets/image/svg/footer-4-insta.svg" alt="insta"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="./assets/image/svg/footer-4-twitter.svg" alt="twitter"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/image/svg/footer-4-fb.svg" alt="fb"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="./assets/image/svg/footer-4-youtube.svg" alt="youtube"></a>
             </div>
             <div class="w-full h-[1px] bg-[#4B4B4B] mb-9 mt-14"></div>
             <a href="/" class=" text-[#B3B3B3] ">Copyright Gaming Kirby</a>
