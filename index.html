@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,128 +23,147 @@
         extend: {
           fontFamily:{
             fontInter:'"Inter", sans-serif;'
-
           },
         }
       }
+    };
+
+    function updateButtonText(button, text) {
+      button.textContent = text;
     }
   </script>
 </head>
 <body class="bg-black">
-    <section class="min-h-screen flex justify-center items-center">
-        <div class="flex gap-10">
-            <div class="dropdown relative inline-block group">
-                <div
-                    class="flex bg-white px-4 py-2.5 items-center gap-5 rounded-t-lg rounded-b-lg hover:rounded-b-none">
-                    <button class="text-base border-none">Featured</button>
-                    <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
-                        viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="#2B2B2B" />
-                    </svg>
-                </div>
-                <div class="hidden absolute bg-white w-full z-10 group-hover:block rounded-b-lg -translate-y-1">
-                    <a class="text-black py-3 px-4 block text-base font-normal hover:bg-[#1EABF8] hover:text-white"
-                        href="#">Featured</a>
-                    <a class="text-black py-3 px-4 block text-base font-normal hover:bg-[#1EABF8] hover:text-white"
-                        href="#">New</a>
-                    <a class="text-black py-3 px-4 block text-base font-normal hover:bg-[#1EABF8] hover:text-white"
-                        href="#">Rating</a>
-
-                </div>
-            </div>
-            <!-- dropdown 2 -->
-            <div class="relative inline-block group">
-                <div class="flex bg-[#FFEEEF] px-4 py-2.5 items-center gap-5 w-full max-w-28">
-                    <button class="text-base border-none font-semibold text-[#5E0612]">Status</button>
-                    <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
-                        viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="#5E0612" />
-                    </svg>
-                </div>
-                <div
-                    class="hidden absolute bg-white w-full z-10 group-hover:block rounded translate-y-1 min-w-[156px] border">
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">All</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-base font-normal" href="#">Done</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Open</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Close</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">In progress</a></div>
-
-                </div>
-            </div>
-
-            <!-- dropdown 3 -->
-            <div class="relative inline-block group">
-                <div class="flex bg-[#5E0612] p-4 items-center gap-5 w-full max-w-44 border border-white rounded">
-                    <button class="text-base border-none font-semibold text-white">Advertisement</button>
-                    <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
-                        viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="white" />
-                    </svg>
-                </div>
-                <div
-                    class="hidden absolute bg-white w-full z-10 group-hover:block rounded translate-y-1 min-w-[174px] border">
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a
-                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-3 bg-[#01DED1] border-l-[3px] border-[008F87] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
-                            href="#">All</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a
-                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-3 bg-[#5E0612] border-l-[3px] border-[#FF0000] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
-                            href="#">Teststrasse 10</a>
-                    </div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a
-                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-3 bg-[#4264CD] border-l-[3px] border-[#0044C7] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
-                            href="#">Hohlstrasse 11</a>
-                    </div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a
-                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-2.5 bg-[#B76100] border-l-[3px] border-[#FF9900] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
-                            href="#">Culmannste 64</a>
-                    </div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a
-                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-[15px] bg-[#008F87] border-l-[3px] border-[#01DED1] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
-                            href="#">Lucernesti 96</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- dropdown 4 -->
-            <div class="relative inline-block group">
-                <div class="flex bg-[#F9F9F9] p-4 items-center gap-5 w-full min-w-[185px]">
-                    <button class="text-base border-none font-semibold text-[#020202B2]">More options</button>
-                    <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
-                        viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="#4C4C4C" />
-                    </svg>
-                </div>
-                <div
-                    class="hidden absolute bg-white w-full z-10 group-hover:block rounded translate-y-1 min-w-[185px] border">
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">All</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Address</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Type</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Status</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Price</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Auction</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Rooms</a></div>
-                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/check-box.svg"
-                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Square meters</a></div>
-                </div>
-            </div>
+ <!-- Dropdown 1 -->
+ <section class="flex items-center justify-between min-h-screen">
+  <div class=" flex items-center justify-center gap-9 mx-auto">
+<div class="relative inline-block group">
+    <div class="flex bg-white px-4 py-2.5 items-center gap-5 rounded-t-lg rounded-b-lg hover:rounded-b-none">
+        <button id="dropdown1-button" class="text-base border-none">Featured</button>
+        <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
+            viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="#2B2B2B" />
+        </svg>
+    </div>
+    <div class="hidden absolute bg-white w-full z-10 group-hover:block rounded-b-lg -translate-y-1">
+        <a class="dropdown-item text-black py-3 px-4 block text-base font-normal hover:bg-[#1EABF8] hover:text-white"
+            href="#" data-value="Featured">Featured</a>
+        <a class="dropdown-item text-black py-3 px-4 block text-base font-normal hover:bg-[#1EABF8] hover:text-white"
+            href="#" data-value="New">New</a>
+        <a class="dropdown-item text-black py-3 px-4 block text-base font-normal hover:bg-[#1EABF8] hover:text-white"
+            href="#" data-value="Rating">Rating</a>
+    </div>
+</div>
+<!-- ---drop-down-2-- -->
+<div class="relative inline-block group">
+    <div class="flex bg-[#FFEEEF] px-4 py-2.5 items-center gap-5 w-full max-w-28">
+        <button id="status-button" class="text-base border-none font-semibold text-[#5E0612]">Status</button>
+        <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
+            viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="#5E0612" />
+        </svg>
+    </div>
+    <div class="hidden absolute bg-white w-full z-10 group-hover:block rounded translate-y-1 min-w-[156px] border">
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="All">All</a>
         </div>
-    </section>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-base font-normal" href="#" data-value="Done">Done</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="Open">Open</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="Close">Close</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="In progress">In progress</a>
+        </div>
+    </div>
+</div>
+<!-- ----dropdown-3 -->
+<div class="relative inline-block group">
+    <div class="flex bg-[#5E0612] p-4 items-center gap-5 w-full max-w-44 border border-white rounded">
+        <button id="advertisement-button" class="text-base border-none font-semibold text-white">Advertisement</button>
+        <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
+            viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="white" />
+        </svg>
+    </div>
+    <div class="hidden absolute bg-white w-full z-10 group-hover:block rounded translate-y-1 min-w-[174px] border">
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-white hover:text-[#858587] block text-xs font-normal py-2 px-3 bg-[#01DED1] border-l-[3px] border-[008F87] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center" href="#" data-value="All">All</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-white hover:text-[#858587] block text-xs font-normal py-2 px-3 bg-[#5E0612] border-l-[3px] border-[#FF0000] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center" href="#" data-value="Teststrasse 10">Teststrasse 10</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-white hover:text-[#858587] block text-xs font-normal py-2 px-3 bg-[#4264CD] border-l-[3px] border-[#0044C7] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center" href="#" data-value="Hohlstrasse 11">Hohlstrasse 11</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-white hover:text-[#858587] block text-xs font-normal py-2 px-2.5 bg-[#B76100] border-l-[3px] border-[#FF9900] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center" href="#" data-value="Culmannste 64">Culmannste 64</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-white hover:text-[#858587] block text-xs font-normal py-2 px-[15px] bg-[#008F87] border-l-[3px] border-[#01DED1] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center" href="#" data-value="Lucernesti 96">Lucernesti 96</a>
+        </div>
+    </div>
+</div>
+<!-- ---dropdown-4 -->
+<div class="relative inline-block group">
+    <div class="flex bg-[#F9F9F9] p-4 items-center gap-5 w-full min-w-[185px]">
+        <button id="more-options-button" class="text-base border-none font-semibold text-[#020202B2]">More options</button>
+        <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
+            viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="#4C4C4C" />
+        </svg>
+    </div>
+    <div class="hidden absolute bg-white w-full z-10 group-hover:block rounded translate-y-1 min-w-[185px] border">
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="All">All</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="Address">Address</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="Type">Type</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="Status">Status</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="Price">Price</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="Auction">Auction</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="Rooms">Rooms</a>
+        </div>
+        <div class="flex items-center ps-4 gap-2 py-2.5">
+            <img src="./assets/images/svg/check-box.svg" alt="">
+            <a class="dropdown-item text-[#858587] block text-sm font-normal" href="#" data-value="Square meters">Square meters</a>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<script src="/assets/js/drop-down.js"></script>
 </body>
 </html>
