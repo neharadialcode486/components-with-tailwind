@@ -1,9 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>email-js</title>
+  <link rel="stylesheet" href="/assets/css/email.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          padding: '12px',
+          center: true,
+          screens: {
+            sm: "600px",
+            md: "728px",
+            lg: "984px",
+            xl: "1320px",
+            "2xl": "1496px",
+          },
+        },
+        extend: {
+          fontFamily:{
+            fontInter:'"Inter", sans-serif;'
+
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-fontInter">
+    <!-- -----first-form ----------->
+<section class="min-h-screen flex items-center justify-center">
+    <div class="container mx-auto px-4">
+        <form>
+            <h1 class="font-medium text-black text-3xl mt-3 max-w-[429px] max-lg:mb-8 max-md:mb-5 max-sm:mb-3 mb-9 text-[40px] max-md:text-3xl max-sm:text-2xl leading-[120%]">Love to hear from you, Get in touch</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="name" class="block text-base font-medium pb-2 text-">Your name</label>
+                    
+                        <input type="text" placeholder="Edward Snowden" class="py-3 px-4 border border-gray-300 rounded-xl w-full text-base font-normal bg-[#8A8A8A2B] text-[#000000B2] outline-none placeholder:text-base placeholder:font-normal placeholder:text-[#000000B2]" />
+                    
+                    <label for="interest" class="block text-base font-medium pb-2 mt-8 max-sm:mt-4">What you are interested in</label>
+                   
+                        <input type="text" placeholder="Design & Branding" class="py-3 px-4 border border-gray-300 rounded-xl w-full text-base font-normal bg-[#8A8A8A2B] text-[#000000B2] outline-none placeholder:text-base placeholder:font-normal placeholder:text-[#000000B2]" />
+                    
+                </div>
+                <div>
+                    <label for="email" class="block text-base font-medium pb-2">Your email</label>
+                 
+                        <input type="email" placeholder="itanexample@gmail.com" class="py-3 px-4 border border-gray-300 rounded-xl w-full text-base font-normal bg-[#8A8A8A2B] text-[#000000B2] outline-none placeholder:text-base placeholder:font-normal placeholder:text-[#000000B2]" required />
+                    
+                    <label for="budget" class="block text-base font-medium pb-2 mt-8 max-sm:mt-4">Project Budget</label>
+                    
+                        <input type="text" placeholder="Select your budget" class=" py-3 px-4 border border-gray-300 rounded-xl w-full text-base font-normal bg-[#8A8A8A2B] text-[#000000B2] outline-none placeholder:text-base placeholder:font-normal placeholder:text-[#000000B2]" />
+                    
+                </div>
+            </div>
+            <label for="message" class="block text-base font-medium pb-2 mt-7 max-sm:mt-5">Message</label>
+            
+                <textarea name="message" id="message" class="text-[#000000B2] h-32 py-3 px-4 border border-gray-300 rounded-xl w-full text-base font-normal bg-[#8A8A8A2B] outline-none placeholder:text-base placeholder:font-normal placeholder:text-[#000000B2]" placeholder="Let us know about your project"></textarea>
+        
+            <button type="submit" class="mt-5 bg-[#3C278D] text-white font-semibold py-3 px-44 rounded-xl max-md:px-32 max-sm:px-16 duration-300 transition-all ease-linear hover:text-[#3C278D] hover:bg-transparent hover:border-[#3C278D] hover:border">Just Send</button>
+        </form>
+    </div>
+</section>
+</body>
 </html>
