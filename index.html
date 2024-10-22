@@ -21,14 +21,14 @@
 </head>
 
 <body class="font-inter">
-  <section class="lg:py-28 md:py-16 sm:py-10 py-6">
+  <section class="lg:py-[116px] md:py-16 sm:py-10 py-6">
     <!--============ heading============== -->
     <div class="container mx-auto px-3">
       <h2 class="md:text-5xl sm:text-4xl text-3xl font-semibold text-center !leading-[120%] mb-4">Membership Program
         Overview</h2>
-      <p class="text-base font-normal opacity-70 text-center !leading-[150%] mb-10">Here are all the perks of
+      <p class="text-base font-normal opacity-70 text-black text-center !leading-[150%] mb-10">Here are all the perks of
         being a member.</p>
-      <div class="flex rounded-[200px] py-[10px] px-3 border-black border mx-auto w-fit gap-2">
+      <div class="flex rounded-[200px] py-[10px] px-[10px] border-black border mx-auto w-fit gap-[10px]">
         <button id="monthlyTab"
           class="tab-btn active text-base font-semibold text-white bg-[#EBA15B] py-[10px] px-[33px] rounded-[52px] !leading-[150%]">Monthly</button>
         <button id="fourMonthsTab"
@@ -36,22 +36,24 @@
           Months</button>
       </div>
     </div>
-    <div class="overflow-x-scroll pb-5 px-5 tab-content-container scroll-w-0">
+    <div class="overflow-x-scroll pb-10 px-5 tab-content-container scroll-w-0">
       <!-- monthly contents -->
       <div id="monthlyContent" class="mx-auto flex gap-6 mt-10 w-[1140px] tab-content active">
         <div
           class="monthly-card transition-all ease-linear duration-300 hover:bg-[#EBA15B] hover:text-white w-[267px] border border-[#EFA7624D] flex justify-between flex-col rounded-xl shadow-custom3Xl py-5">
-          <div class="px-4">
+          <div>
+            <div class="border-b pb-2 px-4 white-line-b border-[#FBECDE] transition-all ease-linear duration-300">
             <p class="text-base font-semibold text-left">Basic</p>
             <p class="text-[32px] font-semibold text-[#EBA15B] text-left">$99/ <span
                 class="text-base font-normal text-black month">Month</span></p>
-            <div class="flex flex-col gap-y-4">
+              </div>
+            <div class="flex flex-col gap-y-4 mt-6 px-4">
               <div class="flex gap-2">
                 <img class="orange-tick transition-all ease-linear duration-500" src="./assets/image/svg/white-tick.svg"
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">End-to-End
                   Ambassador Campaign Management</p>
               </div>
               <div class="flex gap-2">
@@ -59,7 +61,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Ambassador
                   Campaigns on YouTube, TikTok, and Instagram</p>
               </div>
               <div class="flex gap-2">
@@ -67,7 +69,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Discover and
                   Manage up to 100 Sponsorships in your niche </p>
               </div>
               <div class="flex gap-2">
@@ -75,7 +77,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">0% Fee on
                   Ambassador Deals</p>
               </div>
               <div class="flex gap-2">
@@ -83,7 +85,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Global - Over
                   190 Countries to Target</p>
               </div>
               <div class="flex gap-2">
@@ -91,7 +93,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Email Support
                 </p>
               </div>
               <div class="flex gap-2">
@@ -99,14 +101,14 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Onboarding Call
                 </p>
               </div>
             </div>
           </div>
           <div class="border-t white-line border-[#FBECDE] transition-all ease-linear duration-300 justify-center flex">
             <button
-              class="try-for-free transition-all ease-linear duration-300 py-3 px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-7 text-base font-semibold flex">Try
+              class="try-for-free transition-all ease-linear duration-300 py-[13px] px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-[30px] text-base font-semibold flex">Try
               For
               Free</button>
           </div>
@@ -114,17 +116,19 @@
 
         <div
           class="monthly-card transition-all ease-linear duration-300 hover:bg-[#EBA15B] hover:text-white w-[267px] border border-[#EFA7624D] flex justify-between flex-col rounded-xl shadow-custom3Xl py-5">
-          <div class="px-4">
+          <div>
+            <div class="border-b pb-2 px-4 white-line-b border-[#FBECDE] transition-all ease-linear duration-300">
             <p class="text-base font-semibold text-left">Growth</p>
             <p class="text-[32px] font-semibold text-[#EBA15B] text-left">$399/ <span
                 class="text-base font-normal text-black month">Month</span></p>
-            <div class="flex flex-col gap-y-4">
+            </div>
+            <div class="flex flex-col gap-y-4 mt-6 px-4">
               <div class="flex gap-2">
                 <img class="orange-tick transition-all ease-linear duration-500" src="./assets/image/svg/white-tick.svg"
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">End-to-End
                   Ambassador Campaign Management</p>
               </div>
               <div class="flex gap-2">
@@ -132,7 +136,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Ambassador
                   Campaigns on YouTube, TikTok, and Instagram</p>
               </div>
               <div class="flex gap-2">
@@ -140,7 +144,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Discover and
                   Manage up to 100 Sponsorships in your niche </p>
               </div>
               <div class="flex gap-2">
@@ -148,7 +152,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">0% Fee on
                   Ambassador Deals</p>
               </div>
               <div class="flex gap-2">
@@ -156,7 +160,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Global - Over
                   190 Countries to Target</p>
               </div>
               <div class="flex gap-2">
@@ -164,21 +168,21 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">1 Email Inbox Turn-Based Game Creation</p>
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">1 Email Inbox Turn-Based Game Creation</p>
               </div>
               <div class="flex gap-2">
                 <img class="orange-tick transition-all ease-linear duration-500" src="./assets/image/svg/white-tick.svg"
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Engage up to 10000 Customer Ambassadors</p>
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Engage up to 10000 Customer Ambassadors</p>
               </div>
               <div class="flex gap-2">
                 <img class="orange-tick transition-all ease-linear duration-500" src="./assets/image/svg/white-tick.svg"
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Email Support
                 </p>
               </div>
               <div class="flex gap-2">
@@ -186,14 +190,14 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Onboarding Call
                 </p>
               </div>
             </div>
           </div>
           <div class="border-t white-line transition-all ease-linear duration-300 border-[#FBECDE] justify-center flex">
             <button
-              class="try-for-free transition-all ease-linear duration-300 py-3 px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-7 text-base font-semibold flex">Try
+              class="try-for-free transition-all ease-linear duration-300 py-[13px] px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-[30px] text-base font-semibold flex">Try
               For
               Free</button>
           </div>
@@ -201,17 +205,19 @@
 
         <div
           class="monthly-card transition-all ease-linear duration-300 hover:bg-[#EBA15B] hover:text-white w-[267px] border border-[#EFA7624D] flex justify-between flex-col rounded-xl shadow-custom3Xl py-5">
-          <div class="px-4">
+          <div>
+            <div class="border-b pb-2 px-4 white-line-b border-[#FBECDE] transition-all ease-linear duration-300">
             <p class="text-base font-semibold text-left">Advanced</p>
             <p class="text-[32px] font-semibold text-[#EBA15B] text-left">$799/ <span
                 class="text-base font-normal text-black month">Month</span></p>
-            <div class="flex flex-col gap-y-4">
+            </div>
+            <div class="flex flex-col gap-y-4 mt-6 px-4">
               <div class="flex gap-2">
                 <img class="orange-tick transition-all ease-linear duration-500" src="./assets/image/svg/white-tick.svg"
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">End-to-End
                   Ambassador Campaign Management</p>
               </div>
               <div class="flex gap-2">
@@ -219,7 +225,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Ambassador
                   Campaigns on YouTube, TikTok, and Instagram</p>
               </div>
               <div class="flex gap-2">
@@ -227,7 +233,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Discover and
                   Manage up to 100 Sponsorships in your niche </p>
               </div>
               <div class="flex gap-2">
@@ -235,7 +241,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">0% Fee on
                   Ambassador Deals</p>
               </div>
               <div class="flex gap-2">
@@ -243,7 +249,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Global - Over
                   190 Countries to Target</p>
               </div>
               <div class="flex gap-2">
@@ -251,7 +257,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Unlimited Email Inbox Turn-Based Game
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Unlimited Email Inbox Turn-Based Game
                   Creation</p>
               </div>
               <div class="flex gap-2">
@@ -259,14 +265,14 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Engage up to 10000 Customer Ambassadors</p>
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Engage up to 10000 Customer Ambassadors</p>
               </div>
               <div class="flex gap-2">
                 <img class="orange-tick transition-all ease-linear duration-500" src="./assets/image/svg/white-tick.svg"
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Email Support
                 </p>
               </div>
               <div class="flex gap-2">
@@ -274,14 +280,14 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Onboarding Call
                 </p>
               </div>
             </div>
           </div>
           <div class="border-t white-line transition-all ease-linear duration-300 border-[#FBECDE] justify-center flex">
             <button
-              class="try-for-free transition-all ease-linear duration-300 py-3 px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-7 text-base font-semibold flex">Try
+              class="try-for-free transition-all ease-linear duration-300 py-[13px] px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-[30px] text-base font-semibold flex">Try
               For
               Free</button>
           </div>
@@ -289,16 +295,18 @@
 
         <div
           class="monthly-card transition-all ease-linear duration-300 hover:bg-[#EBA15B] hover:text-white w-[267px] border border-[#EFA7624D] flex justify-between flex-col rounded-xl shadow-custom3Xl py-5">
-          <div class="px-4 mb-5">
+          <div class="mb-6">
+            <div class="border-b pb-2 px-4 white-line-b border-[#FBECDE] transition-all ease-linear duration-300">
             <p class="text-base font-semibold text-left">Enterprise</p>
             <p class="text-[32px] font-semibold text-[#EBA15B] text-left">Contact Us</p>
-            <div class="flex flex-col gap-y-4">
+            </div>
+            <div class="flex flex-col gap-y-4 mt-6 px-4">
               <div class="flex gap-2">
                 <img class="orange-tick transition-all ease-linear duration-500" src="./assets/image/svg/white-tick.svg"
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">End-to-End
                   Ambassador Campaign Management</p>
               </div>
               <div class="flex gap-2">
@@ -306,7 +314,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Ambassador
                   Campaigns on YouTube, TikTok, and Instagram</p>
               </div>
               <div class="flex gap-2">
@@ -314,7 +322,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Discover and Manage up to unlimited
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Discover and Manage up to unlimited
                   Sponsorships in your niche</p>
               </div>
               <div class="flex gap-2">
@@ -322,7 +330,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">0% Fee on
                   Ambassador Deals</p>
               </div>
               <div class="flex gap-2">
@@ -330,7 +338,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Global - Over
                   190 Countries to Target</p>
               </div>
               <div class="flex gap-2">
@@ -338,7 +346,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Unlimited Email Inbox Turn-Based Game
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Unlimited Email Inbox Turn-Based Game
                   Creation</p>
               </div>
               <div class="flex gap-2">
@@ -346,14 +354,14 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Engage Unlimited Customer Ambassadors</p>
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Engage Unlimited Customer Ambassadors</p>
               </div>
               <div class="flex gap-2">
                 <img class="orange-tick transition-all ease-linear duration-500" src="./assets/image/svg/white-tick.svg"
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Email Support
                 </p>
               </div>
               <div class="flex gap-2">
@@ -361,14 +369,14 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Onboarding Call
                 </p>
               </div>
             </div>
           </div>
           <div class="border-t white-line transition-all ease-linear duration-300 border-[#FBECDE] justify-center flex">
             <button
-              class="try-for-free transition-all ease-linear duration-300 py-3 px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-7 text-base font-semibold flex">Try
+              class="try-for-free transition-all ease-linear duration-300 py-[13px] px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-[30px] text-base font-semibold flex">Try
               For
               Free</button>
           </div>
@@ -379,17 +387,19 @@
       <div id="fourMonthsContent" class="tab-content hidden max-w-[300px] mx-auto  mt-10">
         <div
           class="monthly-card transition-all ease-linear duration-300 hover:bg-[#EBA15B] hover:text-white w-[267px] border border-[#EFA7624D] flex justify-between flex-col rounded-xl shadow-custom3Xl py-5">
-          <div class="px-4">
+          <div>
+            <div class="border-b pb-2 px-4 white-line-b border-[#FBECDE] transition-all ease-linear duration-300">
             <p class="text-base font-semibold text-left">Basic</p>
-            <p class="text-[32px] font-semibold text-[#EBA15B] text-left">$399/ <span
+            <p class="text-[32px] font-semibold text-[#EBA15B] text-left">$99/ <span
                 class="text-base font-normal text-black month">Month</span></p>
-            <div class="flex flex-col gap-y-4">
+              </div>
+            <div class="flex flex-col gap-y-4 mt-6 px-4">
               <div class="flex gap-2">
                 <img class="orange-tick transition-all ease-linear duration-500" src="./assets/image/svg/white-tick.svg"
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">End-to-End
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">End-to-End
                   Ambassador Campaign Management</p>
               </div>
               <div class="flex gap-2">
@@ -397,7 +407,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Ambassador
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Ambassador
                   Campaigns on YouTube, TikTok, and Instagram</p>
               </div>
               <div class="flex gap-2">
@@ -405,7 +415,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Discover and
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Discover and
                   Manage up to 100 Sponsorships in your niche </p>
               </div>
               <div class="flex gap-2">
@@ -413,7 +423,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">0% Fee on
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">0% Fee on
                   Ambassador Deals</p>
               </div>
               <div class="flex gap-2">
@@ -421,7 +431,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Global - Over
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Global - Over
                   190 Countries to Target</p>
               </div>
               <div class="flex gap-2">
@@ -429,7 +439,7 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Email Support
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Email Support
                 </p>
               </div>
               <div class="flex gap-2">
@@ -437,15 +447,14 @@
                   alt="white-tick">
                 <img class="white-tick hidden transition-all ease-linear duration-500"
                   src="./assets/image/svg/white-yellow-tick.svg" alt="white-yellow-tick">
-                <p class="text-base font-normal !leading-[150%] opacity-70">Onboarding Call
+                <p class="text-base font-normal !leading-[150%] opacity-70 text-black">Onboarding Call
                 </p>
               </div>
             </div>
           </div>
-          <div
-            class="border-t white-line transition-all ease-linear duration-300 border-[#FBECDE] mt-4 justify-center flex">
+          <div class="border-t mt-6 white-line border-[#FBECDE] transition-all ease-linear duration-300 justify-center flex">
             <button
-              class="try-for-free transition-all ease-linear duration-300 py-3 px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-7 text-base font-semibold flex">Try
+              class="try-for-free transition-all ease-linear duration-300 py-[13px] px-6 border border-[#EBA15B] text-[#EBA15B] rounded-[83px] mt-[30px] text-base font-semibold flex">Try
               For
               Free</button>
           </div>
@@ -453,9 +462,9 @@
       </div>
     </div>
 
-    <div class="justify-center flex mt-10">
+    <div class="justify-center flex">
       <button
-        class="bg-[#EBA15B] hover:bg-white hover:text-[#EBA15B] border-[#EBA15B] border transition-all ease-linear duration-300 text-base font-semibold py-[13px] px-7 rounded-[83px] text-white">Contact
+        class="bg-[#EBA15B] hover:bg-white hover:text-[#EBA15B] border-[#EBA15B] border transition-all ease-linear duration-300 text-base font-semibold py-[14px] px-7 rounded-[83px] text-white">Contact
         Us For Enterprise
         Plans.</button>
     </div>

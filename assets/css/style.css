@@ -22,6 +22,9 @@
 .monthly-card:hover .white-line {
   border-top: 1px solid #efb47c !important;
 }
+.monthly-card:hover .white-line-b {
+  border-bottom: 1px solid #efb47c !important;
+}
 
 .monthly-card:hover .month {
   color: white;
