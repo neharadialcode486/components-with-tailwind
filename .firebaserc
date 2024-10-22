@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "countdown-b18ce"
-  }
+    "default": "countdown-b18ce",
+    "new": "countdown-b18ce"
+  },
+  "targets": {},
+  "etags": {}
 }
