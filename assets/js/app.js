@@ -1,5 +1,5 @@
 const counted = false;
-$(window).scroll(function () {{
+$(window).ready(function () {{
   $(".count").each(function () {
       const $this = $(this);
       $this.prop("Counter", 0).animate(
