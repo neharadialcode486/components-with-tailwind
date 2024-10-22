@@ -76,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".swiper", {
  loop: true,
  slidesPerView: 1,
- spaceBetween: 24,
  pagination: {
      el: ".swiper-pagination",
      clickable: true,

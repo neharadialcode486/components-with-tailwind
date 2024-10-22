@@ -21,11 +21,7 @@
                         "2xl": "1496px",
                     },
                 },
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
+                extend: {}
             }
         }
     </script>
@@ -35,28 +31,11 @@
         body {
             font-family: "Inter", sans-serif;
         }
-
-        .swiper-pagination-bullet {
-            opacity: 1;
-            width: 26px;
-            height: 10px;
-            border: 1px solid #DA6015;
-            background-color: transparent;
-            border-radius: 91px;
-        }
-
-        .swiper-pagination-bullet-active {
-            background-color: #DA6015;
-        }
-
-        .swiper-pagination {
-            bottom: 0px !important;
-        }
     </style>
 </head>
 
 <body>
-    <!-- ==Tab 1== -->
+    <!-- ==Tab 1 ui== -->
     <section class="min-h-screen flex justify-center items-center bg-[#0B0B0F]">
         <div class="container pt-[75px]">
             <div class="text-center">
@@ -226,104 +205,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ==Tab 2== -->
-    <section class="min-h-screen flex justify-center items-center">
-        <div class="container py-24  max-md:y-16 max-sm:py-9">
-            <div class="heading text-center pb-10 max-md:pb-7 max-sm:pb-4">
-                <h2 class=" text-[48px] max-lg:text-3xl max-sm:text-2xl font-normal">Shop By <span
-                        class="font-bold">Category</span></h2>
-                <p class="max-w-[695px] mx-auto opacity-70 pt-4 text-base max-md:text-sm">Explore our extensive
-                    collection of traditional
-                    Moroccan
-                    garments,
-                    each crafted with care
-                    and precision to bring you the finest in cultural fashion.</p>
-            </div>
-            <div
-                class="max-w-[551px] mx-auto flex justify-between items-center max-lg:overflow-x-auto gap-2 mb-7 scroll-w-0 p-[9px] border border-gray-400 rounded-full">
-                <button data-target="djellabas"
-                    class="py-[11px] min-w-[125px] max-md:min-w-[105px] tabTwo active font-bold text-white rounded-[52px] text-base max-sm:text-sm bg-[#DA6015] leading-[110%]">Djellabas</button>
-                <button data-target="gandoras"
-                    class="py-[11px] min-w-[129px] max-md:min-w-[109px] tabTwo font-bold rounded-[60px] text-base leading-[110%] max-sm:text-sm">Gandoras</button>
-                <button data-target="caftans"
-                    class="py-[11px] min-w-[115px] max-md:min-w-[95px] tabTwo font-bold rounded-[60px] text-base leading-[110%] max-sm:text-sm">Revenue</button>
-                <button data-target="djellabas"
-                    class="py-[11px] min-w-[132px] max-md:min-w-[112px] tabTwo font-bold rounded-[60px] text-base leading-[110%] max-sm:text-sm">Campaigns</button>
-            </div>
-            <div class="mt-4 max-w-[1140px] mx-auto">
-                <div id="djellabas" class="tabsInfoTwo">
-                    <div class="swiper w-full max-w-5xl mx-auto pb-20">
-                        <div class="swiper-wrapper flex gap-6 max-lg:gap-4 max-sm:gap-2">
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full " src="./assets/images/webp/djellabas.webp"
-                                    alt="Caftans">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full " src="./assets/images/webp/gandoras.webp"
-                                    alt="Djellabas">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full" src="./assets/images/webp/caftans.webp"
-                                    alt="Gandoras">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full" src="./assets/images/webp/gandoras.webp"
-                                    alt="Gandoras">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <div id="gandoras" class="hidden tabsInfoTwo">
-                    <div class="swiper w-full max-w-5xl mx-auto pb-20">
-                        <div class="swiper-wrapper flex gap-6 max-lg:gap-4 max-sm:gap-2">
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full " src="./assets/images/webp/gandoras.webp"
-                                    alt="Caftans">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full " src="./assets/images/webp/caftans.webp"
-                                    alt="Djellabas">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full" src="./assets/images/webp/djellabas.webp"
-                                    alt="Gandoras">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full" src="./assets/images/webp/caftans.webp"
-                                    alt="Gandoras">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <div id="caftans" class="hidden tabsInfoTwo">
-                    <div class="swiper w-full max-w-5xl mx-auto pb-20">
-                        <div class="swiper-wrapper flex gap-6 max-lg:gap-4 max-sm:gap-2">
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full " src="./assets/images/webp/caftans.webp"
-                                    alt="Caftans">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full " src="./assets/images/webp/djellabas.webp"
-                                    alt="Djellabas"></div>
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full" src="./assets/images/webp/gandoras.webp"
-                                    alt="Gandoras">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="max-w-[364px] w-full" src="./assets/images/webp/djellabas.webp"
-                                    alt="Gandoras">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
     <section>
