@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "accordion-b7170"
-  }
+    "default": "accordion-b7170",
+    "y": "accordion-b7170",
+    "new": "clearpath-7830a"
+  },
+  "targets": {},
+  "etags": {}
 }
