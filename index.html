@@ -1,12 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Count down</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          padding: '12px',
+          center: true,
+          screens: {
+            sm: "600px",
+            md: "728px",
+            lg: "984px",
+            xl: "1240px",
+            "2xl": "1496px",
+          },
+        },
+        extend: {
+          boxShadow: {
+            'hover-shadow': ' inset 0px 0px 1px 35px #fff',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+    body {
+      font-family: "inter", sans-serif;
+    }
+  </style>
 </head>
 
-<body></body>
+<body>
+  <!-- Count down -->
+  <section class="min-h-screen flex justify-center items-center">
+    <div class="container relative py-5">
+      <img class="translate-y-[.5px]" src="./assets/images/webp/count-down-top-layer.webp" alt="top layer">
+      <div class="bg-[#FFDEDD] flex gap-5 justify-center items-center max-lg:flex-col">
+        <div class="w-6/12 max-lg:w-full flex flex-col items-center max-lg:justify-center">
+          <div
+            class="max-w-[425px] max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center px-3 max-md:pt-5">
+            <h2 class="text-5xl font-normal max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">Sale Of <span
+                class="font-bold">The Day</span></h2>
+            <p class="text-base font-normal pt-4 opacity-70 max-md:text-sm">Don't miss out on our exclusive
+              daily deals!
+              Enjoy
+              significant discounts on
+              select traditional Moroccan garments.</p>
+            <div class="flex gap-5 pt-2.5">
+              <div class="flex flex-col gap-2">
+                <div id="hours" class="flex text-[55px] font-medium max-lg:text-5xl max-md:text-4xl">
+                  <span id="hours_0">0</span><span id="hours_1">0</span>
+                </div>
+                <p class="text-base max-md:text-sm">Hours</p>
+              </div>
+              <span class="text-[55px] font-medium max-lg:text-5xl max-md:text-4xl">:</span>
+              <div class="flex flex-col gap-2">
+                <div id="minutes" class="flex text-[55px] font-medium max-lg:text-5xl max-md:text-4xl">
+                  <span id="minutes_0">0</span><span id="minutes_1">0</span>
+                </div>
+                <p class="text-base max-md:text-sm">Minutes</p>
+              </div>
+              <span class="text-[55px] font-medium max-lg:text-5xl max-md:text-4xl">:</span>
+              <div class="flex flex-col gap-2">
+                <div id="seconds" class="flex text-[55px] font-medium max-lg:text-5xl max-md:text-4xl">
+                  <span id="seconds_0">0</span><span id="seconds_1">0</span>
+                </div>
+                <p class="text-base max-md:text-sm">Seconds</p>
+              </div>
+            </div>
+
+            <button
+              class="text-white bg-[#DA6015] py-3 px-[21.5px] rounded-lg text-base max-md:text-sm font-bold mt-10 hover:shadow-hover-shadow hover:text-[#DA6015] duration-300 ease-linear">Shop
+              Now</button>
+          </div>
+        </div>
+        <div class="w-6/12 max-lg:w-full">
+          <img src="./assets/images/webp/count-down-lady.webp" alt="image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./assets/js/countdown.js"></script>
+</body>
 
 </html>
