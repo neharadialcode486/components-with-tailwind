@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Second Drop-down</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- dropdown 2  UI-->
+
+<body class="bg-black">
+    <section class="min-h-screen flex justify-center items-center">
+        <div class="relative inline-block group">
+            <div class="flex bg-[#FFEEEF] px-4 py-2.5 items-center gap-5 w-full max-w-28">
+                <button class="text-base border-none font-semibold text-[#5E0612]">Status</button>
+                <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
+                    viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="#5E0612" />
+                </svg>
+            </div>
+            <div class="hidden absolute z-10 group-hover:block pt-1 min-w-[156px]">
+                <div class="bg-white w-full border rounded">
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">All</a></div>
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a class="text-[#858587] block text-base font-normal" href="#">Done</a></div>
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Open</a></div>
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">Close</a></div>
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a class="text-[#858587] block text-sm font-normal" href="#">In progress</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

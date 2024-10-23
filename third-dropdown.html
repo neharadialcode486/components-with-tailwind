@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Third Drop-down</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- dropdown 3  UI-->
+
+<body class="bg-black">
+    <section class="min-h-screen flex justify-center items-center">
+        <div class="relative inline-block group">
+            <div class="flex bg-[#5E0612] p-4 items-center gap-5 w-full max-w-44 border border-white rounded">
+                <button class="text-base border-none font-semibold text-white">Advertisement</button>
+                <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8"
+                    viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="white" />
+                </svg>
+            </div>
+            <div class="hidden absolute z-10 group-hover:block rounded pt-1">
+                <div class="min-w-[174px] border mt-1 bg-white w-full">
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a
+                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-3 bg-[#01DED1] border-l-[3px] border-[008F87] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
+                            href="#">All</a></div>
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a
+                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-3 bg-[#5E0612] border-l-[3px] border-[#FF0000] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
+                            href="#">Teststrasse 10</a>
+                    </div>
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a
+                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-3 bg-[#4264CD] border-l-[3px] border-[#0044C7] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
+                            href="#">Hohlstrasse 11</a>
+                    </div>
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a
+                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-2.5 bg-[#B76100] border-l-[3px] border-[#FF9900] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
+                            href="#">Culmannste 64</a>
+                    </div>
+                    <div class="flex items-center ps-4 gap-2 py-2.5"> <img src="./assets/images/svg/right-click.svg"
+                            alt=""> <a
+                            class="text-white hover:text-[#858587] block text-xs font-normal py-2 px-[15px] bg-[#008F87] border-l-[3px] border-[#01DED1] rounded-sm hover:bg-transparent hover:border-none min-w-24 text-center"
+                            href="#">Lucernesti 96</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
