@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "cards-1a1cb"
-  }
+    "default": "cards-1a1cb",
+    "yes": "cards-1a1cb"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
