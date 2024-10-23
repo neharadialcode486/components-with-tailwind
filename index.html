@@ -1,9 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>First Accordion</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          padding: '12px',
+          center: true,
+          screens: {
+            sm: "600px",
+            md: "728px",
+            lg: "984px",
+            xl: "1240px",
+            "2xl": "1496px",
+          },
+        },
+        extend: {}
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+<!-- accordion one ui -->
+
+<body>
+  <section class="flex justify-center items-center min-h-screen pt-[70px]">
+    <div class="container">
+      <div class="heading text-center">
+        <h2 class="text-5xl font-bold">FAQ</h2>
+        <p class="max-w-[788px] mx-auto pt-4 text-[#000000B2]">Lorem ipsum dolor sit amet consectetur.
+          Semper
+          vitae nullam
+          eget
+          consectetur mi. Vulputate sapien a a bibendum suspendisse quam. Hac posuere eget nam diam velit urna
+          adipiscing diam. </p>
+      </div>
+      <div class="bg-white rounded-lg p-6 max-md:p-4 space-y-4">
+        <!-- Accordion Item 1 -->
+        <div class="accordionItem active border border-[#3C278D] rounded-2xl w-full max-w-[834px] mx-auto">
+          <div class="accordionHeader cursor-pointer flex justify-between px-4 py-5 items-center">
+            <div class="text-xl max-md:text-lg max-sm:text-base font-semibold text-[#3C278D] accordionHead">
+              1. What is a cryptocurrency
+              token?
+            </div>
+            <img src="./assets/images/svg/accordion-arrow.svg" alt="arrow"
+              class="transform transition-transform duration-300">
+          </div>
+          <div class="accordionLine border border-[#999999] max-w-[786px] mx-auto"></div>
+          <p
+            class="accordionInfo text-[#000000B2] text-base max-sm:text-sm font-normal px-4 max-md:px-3 py-2 max-w-[786px]">
+            Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet.
+            Sodales vulputate elementum arcu donec. Feugiat nibh ullamcorper egestas lectus risus ornare
+            ullamcorper fames. Cursus libero nec facilisis risus malesuada arcu cum. Gravida massa
+            scelerisque sociis nulla diam nisl ligula.bh
+          </p>
+        </div>
+        <!-- Accordion Item 2 -->
+        <div class="accordionItem border border-[#3C278D] rounded-2xl w-full max-w-[834px] mx-auto">
+          <div class="accordionHeader cursor-pointer flex justify-between px-4 py-5 items-center">
+            <div class="text-xl max-md:text-lg max-sm:text-base font-normal text-[#3C278D] accordionHead">2.
+              How can I buy cryptocurrency
+              tokens?</div>
+            <img src="./assets/images/svg/accordion-arrow.svg" alt="arrow"
+              class="transform transition-transform duration-300">
+          </div>
+          <div class="accordionLine border border-[#999999] max-w-[786px] mx-auto hidden"></div>
+          <p class="accordionInfo text-[#000000B2] text-base font-normal px-4 max-md:px-3 py-2 hidden max-w-[786px]">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+          </p>
+        </div>
+        <!-- Accordion Item 3 -->
+        <div class="accordionItem border border-[#3C278D] rounded-2xl w-full max-w-[834px] mx-auto">
+          <div class="accordionHeader cursor-pointer flex justify-between px-4 py-5 items-center">
+            <div class="text-xl max-md:text-lg max-sm:text-base font-normal accordionHead text-[#3C278D]">3.
+              What is a token wallet, why do
+              I need one?</div>
+            <img src="./assets/images/svg/accordion-arrow.svg" alt="arrow"
+              class="transform transition-transform duration-300">
+          </div>
+          <div class="accordionLine border border-[#999999] max-w-[786px] mx-auto hidden"></div>
+          <p class="accordionInfo text-[#000000B2] text-base font-normal px-4 max-md:px-3 py-2 hidden max-w-[786px]">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+          </p>
+        </div>
+        <!-- Accordion Item 4 -->
+        <div class="accordionItem border border-[#3C278D] rounded-2xl w-full max-w-[834px] mx-auto">
+          <div class="accordionHeader cursor-pointer flex justify-between px-4 py-5 items-center">
+            <div class="text-xl max-md:text-lg max-sm:text-base font-normal text-[#3C278D] accordionHead">4.
+              Are cryptocurrency tokens
+              secure?</div>
+            <img src="./assets/images/svg/accordion-arrow.svg" alt="arrow"
+              class="transform transition-transform duration-300">
+          </div>
+          <div class="accordionLine border border-[#999999] max-w-[786px] mx-auto hidden"></div>
+          <p class="accordionInfo text-[#000000B2] text-base font-normal px-4 max-md:px-3 py-2 hidden max-w-[786px]">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+          </p>
+        </div>
+        <!-- Accordion Item 5 -->
+        <div class="accordionItem border border-[#3C278D] rounded-2xl w-full max-w-[834px] mx-auto">
+          <div class="accordionHeader cursor-pointer flex justify-between px-4 py-5 items-center">
+            <div class="text-xl max-md:text-lg max-sm:text-base font-normal text-[#3C278D] accordionHead">5.
+              What is a token wallet, and why
+              do
+              I need one?</div>
+            <img src="./assets/images/svg/accordion-arrow.svg" alt="arrow"
+              class="transform transition-transform duration-300">
+          </div>
+          <div class="accordionLine border border-[#999999] max-w-[786px] mx-auto hidden"></div>
+          <p class="accordionInfo text-[#000000B2] text-base font-normal px-4 max-md:px-3 py-2 hidden max-w-[786px]">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./assets/js/accordion.js"></script>
+</body>
+
 </html>
