@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "forms-9f924",
-    "yes": "tailwind-cards"
+    "yes": "forms-9f924"
   },
   "targets": {},
   "etags": {},
