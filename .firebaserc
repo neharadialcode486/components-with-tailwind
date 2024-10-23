@@ -1,7 +1,8 @@
 {
   "projects": {
     "default": "tabs-dfd22",
-    "new": "tabs-dfd22"
+    "new": "tabs-dfd22",
+    "y": "tabs-dfd22"
   },
   "targets": {},
   "etags": {}
