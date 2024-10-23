@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "forms-9f924"
-  }
+    "default": "forms-9f924",
+    "yes": "tailwind-cards"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
