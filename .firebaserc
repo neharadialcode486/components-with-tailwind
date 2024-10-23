@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "cards-1a1cb",
-    "yes": "cards-1a1cb"
+    "yes": "tailwind-cards"
   },
   "targets": {},
   "etags": {},
