@@ -9,6 +9,8 @@
  
 ::-webkit-scrollbar { 
   border-radius: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 .table-2 td {
