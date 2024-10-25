@@ -10,40 +10,50 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
     * {
         font-family: "Inter", sans-serif !important;
     }
-    .common-hover:hover{
+
+    .common-hover:hover {
         color: #EB0055;
     }
 </style>
 
 <body>
-    <footer class="relative bg-cover min-h-screen bg-black flex items-center justify-center flex-col">
+    <footer
+        class="relative bg-cover min-h-screen bg-black flex items-center justify-center flex-col max-w-[1920px] mx-auto">
         <div class="left-side-layer ">
-            <img class="pointer-events-none absolute hidden sm:block top-[25%] left-0 rounded-l-[40px]" src="./assets/image/svg/right-side-layer.svg" alt="layer">
-            <img class="pointer-events-none absolute bottom-[25%] right-0 rounded-r-[40px]" src="./assets/image/svg/left-side-layer.svg" alt="layer">
-            <img class="pointer-events-none absolute top-[30%] left-[5%]" src="./assets/image/svg/ellips-left.svg" alt="layer">
-            <img class="pointer-events-none absolute hidden sm:block top-[45%] right-[15%]" src="./assets/image/svg/ellips-right.svg" alt="layer">
+            <img class="pointer-events-none absolute hidden sm:block top-[50%] translate-y-[-50%] left-0 rounded-l-[40px]"
+                src="./assets/image/svg/right-side-layer.svg" alt="layer">
+            <img class="pointer-events-none absolute bottom-[50%] right-0 rounded-r-[40px] translate-y-[90%] sm:translate-y-[50%]"
+                src="./assets/image/svg/left-side-layer.svg" alt="layer">
+            <img class="pointer-events-none absolute top-[30%] left-[5%]" src="./assets/image/svg/ellips-left.svg"
+                alt="layer">
+            <img class="pointer-events-none absolute hidden sm:block top-[45%] right-[15%]"
+                src="./assets/image/svg/ellips-right.svg" alt="layer">
         </div>
-        <div class="container flex items-center justify-center flex-col mx-auto">
+        <div class="container max-w-[1140px] flex items-center justify-center flex-col mx-auto px-3">
             <a href="/"><img class="mb-[29px]" src="./assets/image/svg/gaming-logo.svg" alt="gaming"></a>
-            <div class="flex flex-col md:flex-row gap-4 text-center md:text-left mb-7">
-                <div class="flex gap-4">
+            <div class="flex flex-col md:flex-row gap-6 text-center md:text-left mb-[30px]">
+                <div class="flex gap-6">
                     <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">Home</p>
                     <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">About Us</p>
                     <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">Tokenomics</p>
                 </div>
-                <div class="flex gap-4 md:mx-0 mx-auto">
+                <div class="flex gap-6 md:mx-0 mx-auto">
                     <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">Utility</p>
                     <p class=" text-[#B3B3B3] common-hover transition-all duration-300 cursor-pointer">Ecosystem</p>
                 </div>
             </div>
-            <div class="flex gap-3">
+            <div class="flex gap-4">
                 <a href="https://www.instagram.com/"><img src="./assets/image/svg/footer-4-insta.svg" alt="insta"></a>
-                <a href="https://www.twitter.com/" target="_blank"><img src="./assets/image/svg/footer-4-twitter.svg" alt="twitter"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/image/svg/footer-4-fb.svg" alt="fb"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="./assets/image/svg/footer-4-youtube.svg" alt="youtube"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="./assets/image/svg/footer-4-twitter.svg"
+                        alt="twitter"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assets/image/svg/footer-4-fb.svg"
+                        alt="fb"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="./assets/image/svg/footer-4-youtube.svg"
+                        alt="youtube"></a>
             </div>
             <div class="w-full h-[1px] bg-[#4B4B4B] mb-9 mt-14"></div>
             <a href="/" class=" text-[#B3B3B3] ">Copyright Gaming Kirby</a>

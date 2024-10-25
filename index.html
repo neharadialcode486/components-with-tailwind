@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Footer 1</title>
-    <link rel="stylesheet" href="./assets/css/footer-1.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -18,58 +18,70 @@
         }
     </script>
 </head>
-<body class="bg-gray-100">
+
+<body>
     <footer class="flex flex-col items-center justify-center min-h-screen">
-        <div class="container mx-auto px-6 max-w-[1140px]">
-            <div class="flex flex-wrap -mx-3 justify-between">
-                <div class="lg:w-3/12 md:w-6/12 w-full md:mt-0 mt-10">
+        <div class="container mx-auto px-3 max-w-[1140px]">
+            <div class="flex flex-wrap justify-between">
+                <div
+                    class="lg:w-3/12 md:w-6/12 w-full md:mt-0 mt-12 justify-center md:justify-start md:items-start flex items-center flex-col ">
                     <div
                         class="bg-logo bg-[#C5C2C2] w-[87px] h-[48px] cursor-pointer flex items-center justify-center mx-auto md:mx-0 mb-6">
-                        <p class="font-medium text-xl text-[#3C278D]">Logo</p>
+                        <p class="font-medium text-base text-[#3C278D]">Logo</p>
                     </div>
                     <p class="text-gray-500 max-w-[221px]  mx-auto md:mx-0 md:text-left text-center">Discover Stellar
                         blockchain's unrivaled
                         speed, security, & scalability with Volag. Revolutionize finance.</p>
                 </div>
-                <div class="lg:w-2/12 w-6/12 md:text-left text-center max-lg:mt-10">
-                    <p class="font-medium mb-4 ">Quick Links</p>
-                    <ul class="flex flex-col gap-[13.5px] text-gray-700  ">
-                        <li><a href="/" class="hover:text-[#3C278D]">Home</a></li>
-                        <li><a href="/" class="hover:text-[#3C278D]">About</a></li>
-                        <li><a href="/" class="hover:textj-[#3C278D]">Community</a></li>
-                        <li><a href="/" class="hover:text-[#3C278D]">RoadMap</a></li>
-                        <li><a href="/" class="hover:text-[#3C278D]">Faqs</a></li>
-                    </ul>
+                <div class="lg:w-2/12 w-6/12 max-md:mt-12 flex justify-center md:justify-start">
+                    <div class="">
+                        <p class="font-normal mb-4 ">Quick Links</p>
+                        <ul class="flex flex-col gap-4 text-[#4D4D4D]">
+                            <li><a href="/" class="hover:text-[#3C278D] leading-[150%]">Home</a></li>
+                            <li><a href="/" class="hover:text-[#3C278D] leading-[150%]">About</a></li>
+                            <li><a href="/" class="hover:textj-[#3C278D] leading-[150%]">Community</a></li>
+                            <li><a href="/" class="hover:text-[#3C278D] leading-[150%]">RoadMap</a></li>
+                            <li><a href="/" class="hover:text-[#3C278D] leading-[150%]">Faqs</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="lg:w-2/12 w-6/12 max-lg:mt-10 md:text-left text-center">
-                    <p class="font-medium mb-4 ">Links</p>
-                    <ul class="flex flex-col gap-[13.5px] text-gray-700 ">
-                        <li><a href="/" class="hover:text-[#3C278D]">Terms & Conditions</a></li>
-                        <li><a href="/" class="hover:text-[#3C278D]">Privacy Policy</a></li>
-                    </ul>
+                <div class="lg:w-2/12 w-6/12 max-lg:mt-6 max-md:mt-12 flex justify-center md:justify-start">
+                    <div class="">
+                        <p class="font-normal mb-4 ">Links</p>
+                        <ul class="flex flex-col gap-4 text-[#4D4D4D]">
+                            <li><a href="/" class="hover:text-[#3C278D] ">Terms & Conditions</a></li>
+                            <li><a href="/" class="hover:text-[#3C278D]">Privacy Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="lg:w-4/12 md:w-6/12 w-full max-lg:mt-10">
-                    <p class="font-medium mb-4 text-center md:text-left">Get in Touch</p>
-                    <form
-                        class="mail bg-[#EAE7F2] rounded-xl flex justify-between items-center p-2 mb-4 max-w-[326px] md:ml-0 mx-auto ">
-                        <input type="email" placeholder="Type Your Mail"
-                            class="email placeholder:text-black bg-none outline-none sm:mr-5 border-none focus:outline-none flex-grow bg-transparent p-2 pl-1">
-                        <button
-                            class="min-w-[84px] min-h-[39px] text-white border-2 border-transparent bg-[#3C278D] rounded-xl leading-[121%] hover:bg-white hover:border-[#3C278D] hover:text-[#3C278D] transition-all duration-300">Search</button>
-                    </form>
-                    <a href="/" class="hover:text-[#3C278D] text-black block text-center md:text-left">Follow us now</a>
-                    <div class="flex justify-center lg:justify-start gap-2 mt-4">
-                        <a href="https://x.com/home?lang=en" target="_blank"><img src="./assets/image/svg/twiteer-icon.svg" alt="twitter"></a>
-                        <a href="https://www.facebook.com/" target="_blank"><img src="./assets/image/svg/facebook-icon.svg" alt="facebook"></a>
-                        <div class="bg-[#3c278d] rounded-full w-[34px] h-[34px] flex items-center justify-center">
-                            <a href="/"><img src="./assets/image/svg/be-icon.svg" alt="be-icon"></a>
+                <div
+                    class="lg:w-4/12 md:w-6/12 max-md:justify-center w-full lg:pl-1 md:justify-start flex  mt-4 md:mt-0">
+                    <div class="max-w-[327px] w-full mx-auto sm:mx-0 mt-6 lg:mt-0">
+                        <p class="font-normal mb-4 text-center md:text-left">Get in Touch</p>
+                        <form
+                            class="mail bg-[#EAE7F2] rounded-xl flex justify-between items-center p-1 pl-3 pr-1 mb-4 max-w-[326px] md:ml-0  ">
+                            <input type="email" placeholder="Type Your Mail"
+                                class="email placeholder:text-black bg-none outline-none sm:mr-5 border-none focus:outline-none flex-grow bg-transparent pl-1">
+                            <button
+                                class="min-w-[84px] min-h-[39px] text-white border-2 border-transparent bg-[#3C278D] rounded-xl leading-[121%] hover:bg-white hover:border-[#3C278D] hover:text-[#3C278D] transition-all duration-300">Search</button>
+                        </form>
+                        <a href="/" class="hover:text-[#3C278D] text-black block text-center md:text-left">Follow us
+                            now</a>
+                        <div class="flex justify-center lg:justify-start gap-4 mt-4">
+                            <a href="https://x.com/home?lang=en" target="_blank"><img
+                                    src="./assets/image/svg/twiteer-icon.svg" alt="twitter"></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img
+                                    src="./assets/image/svg/facebook-icon.svg" alt="facebook"></a>
+                            <div class="bg-[#3c278d] rounded-full w-[34px] h-[34px] flex items-center justify-center">
+                                <a href="/"><img src="./assets/image/svg/be-icon.svg" alt="be-icon"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="h-[1px] bg-[#3C278D] w-full my-6"></div>
-        <p class="text-gray-500 text-center cursor-pointer mb-10">© 2023 Copyright company name. All Rights Reserved.
+        <p class="text-[#4D4D4D] text-center max-lg:mb-12">© 2023 Copyright company name. All Right Reserved.
         </p>
     </footer>
 </body>
