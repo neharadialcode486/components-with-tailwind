@@ -24,8 +24,6 @@ accordionItems.forEach(item => {
         item.classList.toggle('active');
         content.classList.toggle('hidden');
         icon.classList.toggle('rotate-180');
-        
-        // Toggle font-weight classes
         if (item.classList.contains('active')) {
             headings.forEach(heading => {
                 heading.classList.add('font-semibold');
