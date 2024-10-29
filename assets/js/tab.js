@@ -32,24 +32,42 @@ accordionItems.forEach(item => {
     const header = item.querySelector('.accordionHeader');
     const content = item.querySelector('.accordionInfo');
     const icon = item.querySelector('img');
+    const heading = item.querySelector('.accordionHead')
     
     header.addEventListener('click', () => {
         const accordionActive = document.querySelector('.accordionItem.active');
         
         if (accordionActive && accordionActive !== item) {
+            // Deactivate the currently active item
             accordionActive.classList.remove('active');
-            accordionActive.querySelector('.accordionInfo').classList.add('hidden'); 
+            accordionActive.querySelector('.accordionInfo').classList.add('hidden');
             accordionActive.querySelector('img').src = './assets/images/svg/plus.svg';
+            accordionActive.classList.add('border', 'border-[#272834]');
+            accordionActive.querySelector('.accordionHead').classList.remove('text-[32px]','font-bold' , 'max-md:text-2xl');
+            accordionActive.querySelector('.accordionHead').classList.add('text-lg','font-medium');
+            accordionActive.querySelector('.accordionHeader').classList.add('p-6');
         }
         item.classList.toggle('active');
         content.classList.toggle('hidden');
         icon.classList.toggle('rotate-[180deg]');
         icon.classList.toggle('duration-[1s]');
-        icon.src = item.classList.contains('active') 
-            ? './assets/images/svg/minus.svg' 
-            : './assets/images/svg/plus.svg';
+
+        if (item.classList.contains('active')) {
+            icon.src = './assets/images/svg/minus.svg';
+            item.classList.remove('border', 'border-[#272834]');
+            header.classList.remove('p-6');
+            heading.classList.add('text-[32px]' ,'font-bold','max-md:text-2xl');
+            heading.classList.remove('text-lg','font-medium');
+        } else {
+            icon.src = './assets/images/svg/plus.svg';
+            item.classList.add('border', 'border-[#272834]');
+            header.classList.add('p-6');
+            heading.classList.add('text-lg' , 'font-medium');
+            heading.classList.remove('text-[32px]' , 'font-bold','max-md:text-2xl');
+        }
     });
 });
+
 
 // Tab 2
 const tabTwo = document.querySelectorAll('.tabTwo');
@@ -59,11 +77,11 @@ tabTwo.forEach(tab => {
     tab.addEventListener('click', () => {
         const isActiveTab = document.querySelector('.tabTwo.active');
         if (isActiveTab) {
-                isActiveTab.classList.remove('active', 'bg-[#DA6015]', 'text-white','font-bold');
-            isActiveTab.classList.add('font-bold','text-black'); }
+                isActiveTab.classList.remove('active', 'bg-[#DA6015]', 'text-white');
+            isActiveTab.classList.add('text-black'); }
         contentsTwo.forEach(content => content.classList.add('hidden')); 
-        tab.classList.add('active', 'bg-[#DA6015]', 'text-white','font-bold');
-        tab.classList.remove('font-bold','text-black');
+        tab.classList.add('active', 'bg-[#DA6015]', 'text-white');
+        tab.classList.remove('text-black');
         
         const target = tab.getAttribute('data-target');
         const targetContent = document.getElementById(target);
@@ -77,12 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
  loop: true,
  slidesPerView: 1,
  pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
+  el: ".swiper-pagination",
+ clickable: true,
  },
  breakpoints: {
      640: {
-         slidesPerView: 1,
+  slidesPerView: 1,
      },
      768: {
          slidesPerView: 2,
