@@ -2,7 +2,8 @@
   "projects": {
     "default": "countdown-b18ce",
     "new": "countdown-b18ce",
-    "firebase": "countdown-b18ce"
+    "firebase": "countdown-b18ce",
+    "y": "countdown-b18ce"
   },
   "targets": {},
   "etags": {}
