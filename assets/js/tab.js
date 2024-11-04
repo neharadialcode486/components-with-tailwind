@@ -97,6 +97,8 @@ document.addEventListener("DOMContentLoaded", function () {
  pagination: {
   el: ".swiper-pagination",
  clickable: true,
+ centeredSlides: true,
+ centeredSlidesBounds: true
  },
  breakpoints: {
      640: {
