@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "dropdown-select-tailwind",
+    "yes": "dropdown-select-tailwind"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
