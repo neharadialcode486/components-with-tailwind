@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "common-176db"
-  }
+    "default": "common-176db",
+    "y": "common-176db"
+  },
+  "targets": {},
+  "etags": {}
 }
