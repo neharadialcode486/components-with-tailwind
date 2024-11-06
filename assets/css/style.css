@@ -14,7 +14,7 @@
 }
 
 .table-2 td {
-  border-left: 1px solid #0000001A !important;
+  border-left: 1px solid #0000001A;
 }
 
 /* =========monthly card hover============= */
