@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "about-tailwind"
-  }
+    "default": "about-tailwind",
+    "/": "about-tailwind"
+  },
+  "targets": {},
+  "etags": {}
 }
