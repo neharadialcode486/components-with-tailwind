@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "common-176db",
-    "y": "accordion-tailwind"
+    "y": "common-176db"
   },
   "targets": {},
   "etags": {}
