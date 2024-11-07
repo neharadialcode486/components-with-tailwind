@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Footer 3</title>
+    <link rel="shortcut icon" href="./assets/image/svg/fav-icon.svg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -17,41 +18,42 @@
             }
         }
     </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    
+        * {
+            font-family: "Inter", sans-serif !important;
+        }
+    
+        .footer-bg {
+            background-image: url(/assets/image/webp/bg-footer-3.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    
+        .icon-hover path,
+        rect {
+            transition: all 300ms linear;
+        }
+    
+        .icon-hover:hover path {
+            fill: #38ADB5;
+        }
+    
+        .icon-hover:hover rect {
+            fill: #fff;
+        }
+    </style>
+    
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-    * {
-        font-family: "Inter", sans-serif !important;
-    }
-
-    .footer-bg {
-        background-image: url(/assets/image/webp/bg-footer-3.webp);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .icon-hover path,
-    rect {
-        transition: all 300ms linear;
-    }
-
-    .icon-hover:hover path {
-        fill: #38ADB5;
-    }
-
-    .icon-hover:hover rect {
-        fill: #fff;
-    }
-</style>
 
 <body class="bg-black">
     <footer
         class="footer-bg max-w-[1920px] mx-auto max-lg:bg-cover min-h-screen  flex items-center justify-center flex-col">
-        <div class="max-w-[1140px] w-full xl:px-3  mx-auto  mt-12 md:mt-[79px] ">
+        <div class="max-w-[1140px] w-full xl:px-3  mx-auto mt-6  sm:mt-12 md:mt-[79px] ">
             <div class="flex flex-wrap">
                 <div class="lg:w-5/12 px-3 w-full text-left xl:pl-0">
-                    <a href="/"><img class="mb-6 " src="./assets/image/svg/sigma-logo.svg" alt="sigma logo"></a>
+                    <a href="#" class="max-w-[123px] flex"><img class="mb-6" src="./assets/image/svg/sigma-logo.svg" alt="sigma logo"/></a>
                     <h5 class="lg:text-[24px] sm:text-[20px] text-[18px] font-semibold mb-4">Quam
                         tincidunt tellus pellentesque</h5>
                     <p class="text-[#444949] max-w-[425px]  mb-6 ">Lorem ipsum dolor sit amet
@@ -139,7 +141,7 @@
                                     d="M12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.3283 14.4353 9.65339 14.3097 9.95671C14.1841 10.26 13.9999 10.5356 13.7678 10.7678C13.5356 10.9999 13.26 11.1841 12.9567 11.3097C12.6534 11.4353 12.3283 11.5 12 11.5ZM12 2C10.1435 2 8.36301 2.7375 7.05025 4.05025C5.7375 5.36301 5 7.14348 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2Z"
                                     fill="#38ADB5" />
                             </svg>
-                            <a href="/" class="muted-gray text-[#444949]">78 SW 7th Street Miami, FL 33130, USA</a>
+                            <a href="/" class="muted-gray hover:text-[#38ADB5] transition-all duration-300 text-[#444949]">78 SW 7th Street Miami, FL 33130, USA</a>
                         </div>
                         <div class="flex items-center mb-4 gap-4">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -148,9 +150,8 @@
                                     d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"
                                     fill="#38ADB5" />
                             </svg>
-                            <a href="tel:+123 456 7890" target="_blank"
-                                class="text-[#444949] muted-gray text-[16px]">+123
-                                456 7890</a>
+                            <a href="tel:+1234567890"
+                                class="text-[#444949] hover:text-[#38ADB5] transition-all duration-300 muted-gray text-[16px]">+123 456 7890</a>
                         </div>
                         <div class="flex mb-4 gap-4">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -160,14 +161,14 @@
                                     fill="#38ADB5" />
                             </svg>
                             <a href="mailto:webmaster@example.com" target="_blank"
-                                class="muted-gray text-[#444949] text-[16px] max-w-[150px]">Support@sigmahealth
+                                class="muted-gray hover:text-[#38ADB5] transition-all duration-300 text-[#444949] text-[16px] max-w-[150px]">Support@sigmahealth
                                 caresolutions.com</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="w-full h-[1px] bg-[#CADBDC] mb-4"></div>
-            <p class="muted-gray text-center lg:mb-4 mb-12 text-[16px] text-[#444949]">© 2024 Sigma Healthcare
+            <p class="muted-gray text-center lg:mb-4 sm:mb-12 mb-6 text-[16px] text-[#444949]">© 2024 Sigma Healthcare
                 Solutions. All rights Reserved
             </p>
         </div>
