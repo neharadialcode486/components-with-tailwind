@@ -2,3 +2,9 @@
 *{
     font-family: "Inter", sans-serif;
 }
+ul li a {
+    transition: all 300ms linear;
+  }
+  ul li a:hover  {
+    -webkit-text-stroke: #000 1px;
+  }

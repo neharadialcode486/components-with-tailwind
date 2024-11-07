@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/svg/favIcon.svg" type="image/x-icon">
   <title>Header 1</title>
   <script>
     tailwind.config = {
@@ -35,9 +36,11 @@
             <li><a href="#header" class="text-black">TAB NAME</a></li>
             <li><a href="#header" class="text-black">TAB NAME</a></li>
             <li><a href="#header" class="text-black">TAB NAME</a></li>
+            <li class=" max-lg:block hidden">
             <button class="py-3 px-[58px] rounded-xl max-lg:block hidden bg-[#3C278D] text-white">Button</button>
+            </li>
           </ul>
-          <button class="py-3 px-[58px] rounded-xl max-lg:hidden bg-[#3C278D] text-white">Button</button>
+          <button class="py-3 px-[58px] rounded-xl max-lg:hidden bg-[#3C278D] text-white transition-all duration-300 border border-[#3C278D] border-solid hover:bg-white hover:text-[#3C278D]">Button</button>
         </div>
       </nav>
     </div>
