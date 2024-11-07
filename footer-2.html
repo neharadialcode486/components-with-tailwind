@@ -179,10 +179,15 @@
                 </div>
             </div>
             <div class=" md:text-center  block xl:hidden">
-                <p class="text-[#BBBBBB] mb-0 mt-[9px]">© 2024 DatingStars. All rights Reserved</p>
+                <p class="text-[#BBBBBB] mb-0 mt-[9px]">© <span class="year"></span> DatingStars. All rights Reserved</p>
             </div>
         </div>
     </footer>
+    <script>
+        const year = document.querySelector(".year");
+        const currentYear = new Date().getFullYear();
+        year.textContent = currentYear;
+    </script>
 </body>
 
 </html>

@@ -168,11 +168,16 @@
                 </div>
             </div>
             <div class="w-full h-[1px] bg-[#CADBDC] mb-4"></div>
-            <p class="muted-gray text-center lg:mb-4 sm:mb-12 mb-6 text-[16px] text-[#444949]">© 2024 Sigma Healthcare
+            <p class="muted-gray text-center lg:mb-4 sm:mb-12 mb-6 text-[16px] text-[#444949]">© <span class="year"></span> Sigma Healthcare
                 Solutions. All rights Reserved
             </p>
         </div>
     </footer>
+    <script>
+        const year = document.querySelector(".year");
+        const currentYear = new Date().getFullYear();
+        year.textContent = currentYear;
+    </script>
 </body>
 
 </html>
