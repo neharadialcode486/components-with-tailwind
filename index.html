@@ -31,14 +31,16 @@
 <body class="bg-black">
   <section class="min-h-screen flex justify-center items-center">
     <div class="dropdown relative inline-block group">
-      <div class="flex bg-white px-4 py-2.5 items-center gap-5 rounded-t-lg rounded-b-lg hover:rounded-b-none">
+      <div
+        class="flex bg-white px-4 py-2.5 items-center gap-5 rounded-t-lg rounded-b-lg hover:rounded-b-none cursor-pointer">
         <button class="text-base border-none">Featured</button>
         <svg class="group-hover:rotate-0 rotate-180 duration-300 ease-linear" width="12" height="8" viewBox="0 0 12 8"
           fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.41 7.41L6 2.83L10.59 7.41L12 6L6 0L0 6L1.41 7.41Z" fill="#2B2B2B" />
         </svg>
       </div>
-      <div class="hidden absolute bg-white w-full z-10 group-hover:block rounded-b-lg -translate-y-2">
+      <div
+        class="h-0 absolute bg-white w-full z-10 group-hover:h-36 rounded-b-lg -translate-y-2 duration-500 ease-linear">
         <a class="text-black py-3 px-4 block text-base font-normal hover:bg-[#1EABF8] hover:text-white"
           href="#">Featured</a>
         <a class="text-black py-3 px-4 block text-base font-normal hover:bg-[#1EABF8] hover:text-white" href="#">New</a>
