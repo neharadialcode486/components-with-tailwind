@@ -1,24 +1,24 @@
-const accordionItems = document.querySelectorAll('.accordionItem');
+const accordion-items = document.querySelectorAll('.accordion-item');
 
-accordionItems.forEach(item => {
-    const header = item.querySelector('.accordionHeader');
-    const content = item.querySelector('.accordionInfo');
+accordion-items.forEach(item => {
+    const header = item.querySelector('.accordion-header');
+    const content = item.querySelector('.accordion-info');
     const icon = item.querySelector('img');
-    const headings = item.querySelectorAll('.accordionHead');
-    const line = item.querySelector('.accordionLine');
+    const headings = item.querySelectorAll('.accordion-head');
+    const line = item.querySelector('.accordion-line');
 
     header.addEventListener('click', () => {
-        const accordionActive = document.querySelector('.accordionItem.active');
+        const accordionActive = document.querySelector('.accordion-item.active');
 
         if (accordionActive && accordionActive !== item) {
             accordionActive.classList.remove('active');
-            accordionActive.querySelector('.accordionInfo').classList.add('hidden');
+            accordionActive.querySelector('.accordion-info').classList.add('hidden');
             accordionActive.querySelector('img').classList.remove('rotate-180');
-            accordionActive.querySelectorAll('.accordionHead').forEach(heading => {
+            accordionActive.querySelectorAll('.accordion-head').forEach(heading => {
                 heading.classList.remove('font-semibold');
                 heading.classList.add('font-normal');
             });            
-            accordionActive.querySelector('.accordionLine').classList.add('hidden');
+            accordionActive.querySelector('.accordion-line').classList.add('hidden');
         }
 
         item.classList.toggle('active');
