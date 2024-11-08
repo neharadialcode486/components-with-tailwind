@@ -47,20 +47,20 @@
                 <div class="flex flex-wrap">
                     <div
                         class="xl:w-4/12 lg:w-6/12 w-full pl-0 lg:text-left text-center flex flex-col lg:items-start items-center xl:pr-3">
-                        <a href="#footer"><img class="mb-2 max-lg:mx-auto" src="./assets/image/svg/cointips-logo.svg"
+                        <a href="#logo"><img class="max-lg:mx-auto" src="./assets/image/svg/cointips-logo.svg"
                                 alt="logo" /></a>
-                        <p class="text-[#A0A6B0] max-sm:text-center max-w-[356px]">© 2024 Cointips LLC. Tous droits
+                        <p class="text-[#A0A6B0] max-sm:text-center max-w-[356px] xl:block hidden">© <span class="year"></span> Cointips LLC. Tous droits
                             réservés.</p>
                     </div>
                     <div class="xl:w-6/12 lg:w-6/12 w-full flex items-center justify-center max-lg:mt-[18px] px-3">
-                        <div class="flex flex-wrap gap-[24px] mx-auto xl:mt-0 mt-[7px] max-lg:justify-center">
-                            <a href="#footer"
+                        <div class="flex flex-wrap gap-[24px] mx-auto max-lg:justify-center">
+                            <a href="#cgv"
                                 class="text-[#A0A6B0] max-md:text-center hover:text-white cursor-pointer transition-all duration-300">
                                 CGV</a>
-                            <a href="#footer"
+                            <a href="#politique"
                                 class="text-[#A0A6B0] max-md:text-center hover:text-white cursor-pointer transition-all duration-300">
                                 Politique de confidentialité</a>
-                            <a href="#footer"
+                            <a href="#mentions-legales"
                                 class="text-[#A0A6B0] max-md:text-center hover:text-white cursor-pointer transition-all duration-300">
                                 Mentions légales</a>
                         </div>
@@ -88,9 +88,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="">
+                    <p class="text-[#A0A6B0] mx-auto text-center mt-5 max-w-[356px] xl:hidden block">© <span class="year"></span> Cointips LLC. Tous droits
+                        réservés.</p>
+                </div>
             </div>
         </div>
     </footer>
+    <script>
+        const year = document.querySelector(".year");
+        const currentYear = new Date().getFullYear();
+        year.textContent = currentYear;
+    </script>
 </body>
 
 </html>
